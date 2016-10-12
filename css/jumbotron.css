@@ -1,0 +1,92 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    color:#333;
+}
+
+
+img{
+    width: 201px;
+    float: left;
+    margin-left: 102px;
+    margin-right: 37px;
+}
+
+p{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+.jumbotron{
+    background:#f5f5f5;
+    line-height: 35px;
+}
+.row{
+    line-height: 23px;
+    font-size: 14px;
+}
+.fa{
+    float:left;
+    margin-right:13px;
+}
+.skill-title{
+    font-size:21px;
+}
+
+.col-md-4{
+    margin-bottom:11px;
+    width: 24.333333%;
+}
+
+.container{
+    width:1064px;
+}
+ul{
+    list-style-type: square;
+}
+p.sub {
+    font-size: 17px;
+    margin-left: 23px;
+    font-weight: bold;
+}
+
+.bg {
+    background: #F0F0F0;
+    padding: 4px;
+    border-radius: 5px;
+    margin: 6px;
+}
+
+li{
+    padding:2px;
+}
+.skill-sub{
+    font-size:17px;
+}
+a{
+    text-decoration: none;
+}
+a.italic{
+    font-style: italic;
+}
+a:hover{
+    text-decoration:none;
+}
+footer> .fa {
+    font-size: 15px;
+}
+
+footer> a{
+    color:#000;
+    text-decoration:none;
+}
+footer ul li {
+  display: inline;
+  font-size: 8px;
+}
