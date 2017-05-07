@@ -50,6 +50,8 @@
                 -o-transition: all 1s ease;
                 /* Standard */
                 transition: all 1s ease;
+                font-style: italic;
+                font-weight:bold;
             }
 
             .css-item:hover{
