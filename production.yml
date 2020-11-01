@@ -1,0 +1,54 @@
+version: '3'
+
+volumes:
+  production_postgres_data: {}
+  production_postgres_data_backups: {}
+  production_traefik: {}
+
+services:
+  django:
+    build:
+      context: .
+      dockerfile: ./compose/production/django/Dockerfile
+    image: ikerocio_production_django
+    depends_on:
+      - postgres
+    env_file:
+      - ./.envs/.production/.django
+      - ./.envs/.production/.postgres
+    environment:
+      - 'DJANGO_ALLOWED_HOSTS=.ikerocio.com,localhost'
+    command: /start
+
+  postgres:
+    build:
+      context: .
+      dockerfile: ./compose/production/postgres/Dockerfile
+    image: ikerocio_production_postgres
+    volumes:
+      - production_postgres_data:/var/lib/postgresql/data:Z
+      - production_postgres_data_backups:/backups:z
+    env_file:
+      - ./.envs/.production/.postgres
+  
+  nginx:
+    build:
+      context: .
+      dockerfile: ./compose/production/nginx/Dockerfile
+    image: ikerocio_production_nginx
+    depends_on:
+      - django
+    volumes:
+      - ./ikerocio/static:/staticfiles
+      - ./compose/production/nginx/certbot/conf:/etc/letsencrypt
+      - ./compose/production/nginx/certbot/www:/var/www/certbot
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: unless-stopped
+  
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./compose/production/nginx/certbot/conf:/etc/letsencrypt
+      - ./compose/production/nginx/certbot/www:/var/www/certbot
