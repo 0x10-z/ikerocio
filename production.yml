@@ -24,7 +24,7 @@ services:
       - ./.envs/.production/.django
       - ./.envs/.production/.postgres
     environment:
-      - 'DJANGO_ALLOWED_HOSTS=.ikerocio.com,localhost'
+      - 'DJANGO_ALLOWED_HOSTS=.ikerocio.com,www.ikerocio.com'
     command: /start
     networks:
       ikerocio_network:
