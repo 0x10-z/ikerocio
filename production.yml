@@ -65,5 +65,6 @@ services:
     volumes:
       - ./compose/production/nginx/certbot/conf:/etc/letsencrypt
       - ./compose/production/nginx/certbot/www:/var/www/certbot
+      - /var/log/letsencrypt:/var/log/letsencrypt
     networks:
       ikerocio_network:
