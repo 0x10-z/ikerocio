@@ -7,11 +7,13 @@ fi
 
 domains=(iocio005.eus www.iocio005.eus)
 rsa_key_size=4096
-data_path="./certbot"
+data_path="./compose/production/nginx/certbot"
 email="ikerocio@yahoo.es" # Adding a valid address is strongly recommended
 staging=0 # Set to 1 if you're testing your setup to avoid hitting request limits
 
-docker_compose_file_path="../../../production.yml"
+docker_compose_file_path="production.yml"
+
+restore_permissions_command="sudo chown -R ec2-user:ec2-user ./"
 
 if [ -d "$data_path" ]; then
   read -p "Existing data found for $domains. Continue and replace existing certificate? (y/N) " decision
@@ -38,6 +40,9 @@ docker-compose -f $docker_compose_file_path run --rm --entrypoint "\
     -out '$path/fullchain.pem' \
     -subj '/CN=localhost'" certbot
 echo
+
+echo "### Restoring permissions to files..."
+$restore_permissions_command
 
 
 echo "### Starting nginx ..."
@@ -80,3 +85,6 @@ echo
 
 echo "### Reloading nginx ..."
 docker-compose -f $docker_compose_file_path exec nginx nginx -s reload
+
+echo "### Restoring permissions to files..."
+$restore_permissions_command

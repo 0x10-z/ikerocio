@@ -1,9 +1,16 @@
 version: '3'
 
+networks:
+  ikerocio_network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: '1.2.3.0/24'
+
 volumes:
   production_postgres_data: {}
   production_postgres_data_backups: {}
-  production_traefik: {}
 
 services:
   django:
@@ -19,6 +26,8 @@ services:
     environment:
       - 'DJANGO_ALLOWED_HOSTS=.ikerocio.com,localhost'
     command: /start
+    networks:
+      ikerocio_network:
 
   postgres:
     build:
@@ -30,6 +39,8 @@ services:
       - production_postgres_data_backups:/backups:z
     env_file:
       - ./.envs/.production/.postgres
+    networks:
+      ikerocio_network:
   
   nginx:
     build:
@@ -46,9 +57,13 @@ services:
       - "80:80"
       - "443:443"
     restart: unless-stopped
+    networks:
+      ikerocio_network:
   
   certbot:
     image: certbot/certbot
     volumes:
       - ./compose/production/nginx/certbot/conf:/etc/letsencrypt
       - ./compose/production/nginx/certbot/www:/var/www/certbot
+    networks:
+      ikerocio_network:
