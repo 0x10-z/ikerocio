@@ -87,7 +87,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex flex-row-reverse mb-2">
-                    <form id="language-form" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                    <form id="language-form" action="{% url 'set_language' %}" method="post">
+                        {% csrf_token %}
                         <input name="language" type="hidden" value="">
                     {% get_language_info_list for LANGUAGES as languages %}
                     {% for language in languages %}
