@@ -9,8 +9,8 @@ networks:
         - subnet: '1.2.3.0/24'
 
 volumes:
-  production_postgres_data: {}
-  production_postgres_data_backups: {}
+  ikerocio_postgres_data: {}
+  ikerocio_postgres_data_backups: {}
   data_mysql: {}
 
 services:
@@ -46,7 +46,7 @@ services:
   nginx:
     build:
       context: .
-      dockerfile: ./compose/production/nginx/Dockerfile_without_ssl
+      dockerfile: ./compose/production/nginx/Dockerfile
     image: ikerocio_production_nginx
     depends_on:
       - django
