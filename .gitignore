@@ -329,3 +329,5 @@ prueba_1/media/
 .envs/*
 !.envs/.local/
 !.envs/.production/
+
+data/*
