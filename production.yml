@@ -3,10 +3,6 @@ version: '3'
 networks:
   ikerocio_network:
     driver: bridge
-    ipam:
-      driver: default
-      config:
-        - subnet: '1.2.3.0/24'
 
 volumes:
   ikerocio_postgres_data: {}
@@ -27,6 +23,7 @@ services:
     environment:
       - 'DJANGO_ALLOWED_HOSTS=.ikerocio.com,www.ikerocio.com,localhost'
     command: /start
+    restart: unless-stopped
     networks:
       ikerocio_network:
   
@@ -40,6 +37,7 @@ services:
       - ikerocio_postgres_data_backups:/backups:z
     env_file:
       - ./.envs/.production/.postgres
+    restart: unless-stopped
     networks:
       ikerocio_network:
   
@@ -76,7 +74,7 @@ services:
   
   db:
     image: mariadb
-    restart: always
+    restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: "password123"
       MYSQL_DATABASE: "nginxproxymanager"
