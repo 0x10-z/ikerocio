@@ -5,7 +5,7 @@ volumes:
   local_postgres_data_backups: {}
 
 services:
-  django:
+  ikerocio:
     build:
       context: .
       dockerfile: ./compose/local/django/Dockerfile

@@ -1,8 +1,9 @@
 version: '3'
 
 networks:
-  ikerocio_network:
-    driver: bridge
+  default:
+    external:
+      name: ikerocio_network
 
 volumes:
   ikerocio_postgres_data: {}
@@ -10,7 +11,7 @@ volumes:
   data_mysql: {}
 
 services:
-  django:
+  ikerocio:
     build:
       context: .
       dockerfile: ./compose/production/django/Dockerfile
@@ -25,7 +26,7 @@ services:
     command: /start
     restart: unless-stopped
     networks:
-      ikerocio_network:
+      default:
   
   postgres:
     build:
@@ -39,7 +40,7 @@ services:
       - ./.envs/.production/.postgres
     restart: unless-stopped
     networks:
-      ikerocio_network:
+      default:
   
   nginx:
     build:
@@ -51,36 +52,9 @@ services:
     volumes:
       - ./ikerocio/static:/staticfiles
     ports:
-      - "8080:80"
+      - "80"
     restart: unless-stopped
     volumes:
       - ./compose/production/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
     networks:
-      ikerocio_network:
-
-  nginx_proxy_manager:
-    image: jc21/nginx-proxy-manager:latest
-    ports:
-      - '80:80'
-      - '81:81'
-      - '443:443'
-    volumes:
-      - ./compose/production/nginx-proxy-manager/config.json:/app/config/production.json
-      - ./compose/production/nginx-proxy-manager/data:/data
-      - ./compose/production/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
-    restart: unless-stopped
-    networks:
-      ikerocio_network:
-  
-  db:
-    image: mariadb
-    restart: unless-stopped
-    environment:
-      MYSQL_ROOT_PASSWORD: "password123"
-      MYSQL_DATABASE: "nginxproxymanager"
-      MYSQL_USER: "nginxproxymanager"
-      MYSQL_PASSWORD: "password123"
-    volumes:
-      - data_mysql:/var/lib/mysql
-    networks:
-      ikerocio_network:
+      default:
