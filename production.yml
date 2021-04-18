@@ -8,7 +8,6 @@ networks:
 volumes:
   ikerocio_postgres_data: {}
   ikerocio_postgres_data_backups: {}
-  data_mysql: {}
 
 services:
   ikerocio:
@@ -18,11 +17,22 @@ services:
     image: ikerocio_production_django
     depends_on:
       - postgres
-    env_file:
-      - ./.envs/.production/.django
-      - ./.envs/.production/.postgres
     environment:
       - 'DJANGO_ALLOWED_HOSTS=.ikerocio.com,www.ikerocio.com,localhost'
+      - 'DJANGO_SETTINGS_MODULE=config.settings.production'
+      - 'DJANGO_SECRET_KEY=xQDtmgrz5EscFFxLKQ068ERp0SPxtgBOKOkdsUU4F5t4SWQZstD0S5iSWBKj2Elj'
+      - 'DJANGO_ADMIN_URL=ty3Lgv8rPuvAw3bkOSZPd3j7JaX1mEc2/'
+      - 'DJANGO_SECURE_SSL_REDIRECT=False'
+      - 'DJANGO_SERVER_EMAIL='
+      - 'MAILGUN_API_KEY='
+      - 'MAILGUN_DOMAIN='
+      - 'WEB_CONCURRENCY=2'
+      # postgres
+      - 'POSTGRES_HOST=postgres'
+      - 'POSTGRES_PORT=5432'
+      - 'POSTGRES_DB=prueba_1'
+      - 'POSTGRES_USER=debug'
+      - 'POSTGRES_PASSWORD=debug'
     command: /start
     restart: unless-stopped
     networks:
@@ -36,25 +46,28 @@ services:
     volumes:
       - ikerocio_postgres_data:/var/lib/postgresql/data:Z
       - ikerocio_postgres_data_backups:/backups:z
-    env_file:
-      - ./.envs/.production/.postgres
+    environment:
+      # postgres
+      - 'POSTGRES_HOST=postgres'
+      - 'POSTGRES_PORT=5432'
+      - 'POSTGRES_DB=prueba_1'
+      - 'POSTGRES_USER=debug'
+      - 'POSTGRES_PASSWORD=debug'
     restart: unless-stopped
     networks:
       default:
   
-  nginx:
+  nginx_ikerocio:
     build:
       context: .
       dockerfile: ./compose/production/nginx/Dockerfile
     image: ikerocio_production_nginx
     depends_on:
-      - django
+      - ikerocio
     volumes:
       - ./ikerocio/static:/staticfiles
     ports:
-      - "80"
+      - "80:80"
     restart: unless-stopped
-    volumes:
-      - ./compose/production/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
     networks:
       default:
