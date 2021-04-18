@@ -10,7 +10,7 @@ volumes:
   ikerocio_postgres_data_backups: {}
 
 services:
-  ikerocio:
+  django_ikerocio:
     build:
       context: .
       dockerfile: ./compose/production/django/Dockerfile
@@ -63,7 +63,7 @@ services:
       dockerfile: ./compose/production/nginx/Dockerfile
     image: ikerocio_production_nginx
     depends_on:
-      - ikerocio
+      - django_ikerocio
     volumes:
       - ./ikerocio/static:/staticfiles
     ports:
