@@ -67,7 +67,7 @@ services:
     volumes:
       - ./ikerocio/static:/staticfiles
     ports:
-      - "80:80"
+      - "80"
     restart: unless-stopped
     networks:
       default:
