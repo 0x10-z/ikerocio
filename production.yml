@@ -16,7 +16,7 @@ services:
       dockerfile: ./compose/production/django/Dockerfile
     image: ikerocio_production_django
     depends_on:
-      - postgres
+      - postgres_ikerocio
     environment:
       - 'DJANGO_ALLOWED_HOSTS=.ikerocio.com,www.ikerocio.com,localhost'
       - 'DJANGO_SETTINGS_MODULE=config.settings.production'
@@ -28,7 +28,7 @@ services:
       - 'MAILGUN_DOMAIN='
       - 'WEB_CONCURRENCY=2'
       # postgres
-      - 'POSTGRES_HOST=postgres'
+      - 'POSTGRES_HOST=postgres_ikerocio'
       - 'POSTGRES_PORT=5432'
       - 'POSTGRES_DB=prueba_1'
       - 'POSTGRES_USER=debug'
@@ -38,7 +38,7 @@ services:
     networks:
       default:
   
-  postgres:
+  postgres_ikerocio:
     build:
       context: .
       dockerfile: ./compose/production/postgres/Dockerfile
@@ -48,7 +48,7 @@ services:
       - ikerocio_postgres_data_backups:/backups:z
     environment:
       # postgres
-      - 'POSTGRES_HOST=postgres'
+      - 'POSTGRES_HOST=postgres_ikerocio'
       - 'POSTGRES_PORT=5432'
       - 'POSTGRES_DB=prueba_1'
       - 'POSTGRES_USER=debug'
