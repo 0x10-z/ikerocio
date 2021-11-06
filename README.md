@@ -32,3 +32,9 @@ Then, run docker-compose
 ```sh
 docker-compose -f production.yml up
 ```
+
+## Each new deployment if db is recreated
+
+```sh
+docker-compose -f production.yml run --rm django_ikerocio python manage.py migrate
+```
