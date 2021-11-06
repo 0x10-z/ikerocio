@@ -38,18 +38,18 @@ data = {
             "description": _("Hablar del Frontend en el siglo XXI sin nombrar Javascript o una de sus muchas librerías es imposible. Y no parece que vaya a cambiar. Por tanto... indispensable."),
         },
         {
-            "icon_class": "fa fa-tags",
+            "icon_class": "fab fa-css3-alt",
             "title": _("CSS"),
             "description": _("Digan lo que digan. Las cosas siempre quedan más bonitas cuando las maquillas. Y el desarrollo web no iba a ser menos."),
             "css": True,
         },
         {
-            "icon_class": "fa fa-coffee",
+            "icon_class": "fab fa-java",
             "title": _("Java"),
             "description": _("La potencia de la multiplataforma y su mercado. Hoy en día nos rodean infinidad de aplicaciones que derivan de este lenguaje. Además, fue con el que aprendí a programar de verdad."),
         },
         {
-            "icon_class": "fa fa-puzzle-piece",
+            "icon_class": "fab fa-php",
             "title": _("PHP"),
             "description": _("El primer lenguaje de programación web que descubrí. Todo lo básico sobre el desarrollo web lo aprendí gracias a el."),
         },

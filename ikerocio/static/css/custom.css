@@ -83,3 +83,64 @@ a:hover{
 p.description{
     font-size:1.5rem;
 }
+
+/* Customizations to get same font sizes in bootstrap.cosmo.min.css and bootstrap.cyborg.min.css */
+.h1, h1 {
+    font-size:2.5rem;
+}
+
+.fs-4 {
+    font-size: 1.5rem!important;
+}
+
+.sn-ul{
+    list-style: none;
+}
+
+.sn-description{
+    margin-left:8px;
+}
+
+.fa-python{
+    color:#4584b6 !important;
+}
+
+.fa-android{
+    color: #a4c639 !important;
+}
+
+.fa-database{
+    color:#00758f !important;
+}
+
+.fa-php{
+    color: #4f5b93 !important;
+}
+
+.fa-java {
+    color: #db1f29 !important;
+}
+
+.fa-js-square{
+    color: #f7df1e !important;
+}
+
+.fa-aws{
+    color: #ff9900 !important;
+}
+
+.fa-docker{
+    color:#0db7ed !important;
+}
+
+.fa-code-branch{
+    color: #d910f1 !important;
+}
+
+.fa-shield-alt{
+    color: rgb(221, 149, 81) !important;
+}
+
+.fa-css3-alt{
+    color: #264de4 !important;
+}
