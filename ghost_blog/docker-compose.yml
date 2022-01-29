@@ -25,7 +25,7 @@ services:
       - mariadb
     environment:
       - GHOST_BLOG_TITLE=ikerocio.com
-      - GHOST_HOST=127.0.0.1
+      - GHOST_HOST=blog.ikerocio.com
       - GHOST_DATABASE_PASSWORD=itdCZfcHQb57zJiuTTyUXRMCM0jxtWD7jhjsO
       - GHOST_DATABASE_HOST=mariadb
       - GHOST_DATABASE_PORT_NUMBER=3306
