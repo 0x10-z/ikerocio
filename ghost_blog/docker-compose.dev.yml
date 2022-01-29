@@ -1,0 +1,39 @@
+version: '3'
+networks:
+  default:
+    external:
+      name: ikerocio_network
+services:
+  mariadb:
+    image: docker.io/bitnami/mariadb:10.3
+    volumes:
+      - 'mariadb_data_dev:/bitnami/mariadb'
+    environment:
+      - MARIADB_USER=bn_ghost
+      - MARIADB_DATABASE=bitnami_ghost
+      - MARIADB_ROOT_PASSWORD=itdCZfcHQb57zJiuTTyUXRMCM0jxtWD7jhjsO
+      - MARIADB_PASSWORD=itdCZfcHQb57zJiuTTyUXRMCM0jxtWD7jhjsO
+    restart: unless-stopped
+
+  ghost:
+    image: docker.io/bitnami/ghost:4
+    ports:
+      - '80:2368'
+    volumes:
+      - 'ghost_data_dev:/bitnami/ghost'
+    depends_on:
+      - mariadb
+    environment:
+      - GHOST_BLOG_TITLE=ikerocio.com
+      - GHOST_HOST=127.0.0.1
+      - GHOST_DATABASE_PASSWORD=itdCZfcHQb57zJiuTTyUXRMCM0jxtWD7jhjsO
+      - GHOST_DATABASE_HOST=mariadb
+      - GHOST_DATABASE_PORT_NUMBER=3306
+      - GHOST_DATABASE_USER=bn_ghost
+      - GHOST_DATABASE_NAME=bitnami_ghost
+    restart: unless-stopped
+volumes:
+  mariadb_data_dev:
+    driver: local
+  ghost_data_dev:
+    driver: local
