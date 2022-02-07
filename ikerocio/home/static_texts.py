@@ -149,12 +149,17 @@ data = {
             "university": "Universidad de Mondragón",
         }
     ],
-    "about_me": _("Soy una persona bastante competitiva en constante aprendizaje y de un perfil muy tecnico. Además, en mis ratos libres, me gusta disfrutar de la música, los amigos y el deporte."),
+    "about_me": _("Soy una persona bastante competitiva en constante aprendizaje y de un perfil muy tecnico. Además, en mis ratos libres, me gusta disfrutar de la música, los amigos y el deporte. En ocasiones, escribo cosas en el blog."),
     "social_networks": [
         {
             "icon_class": "fa fa-user",
             "url": "https://ikerocio.com",
             "name": "Iker Ocio Zuazo"
+        },
+        {
+            "icon_class": "fas fa-blog",
+            "url": "https://blog.ikerocio.com",
+            "name": "Blog"
         },
         {
             "icon_class": "fab fa-linkedin",
@@ -170,7 +175,7 @@ data = {
             "icon_class": "fa fa-envelope",
             "url": "mailto:iker@ikerocio.com",
             "name": "iker@ikerocio.com"
-        },
+        }
     ],
     "portfolio": [
         {
