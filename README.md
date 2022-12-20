@@ -4,9 +4,9 @@
 ## Translations
 
 ```sh
-docker-compose -f local.yml run --rm django django-admin.py makemessages -l en 
+docker-compose -f local.yml run --rm django_ikerocio django-admin makemessages -l en 
 
-docker-compose -f local.yml run --rm django django-admin.py compilemessages -l en
+docker-compose -f local.yml run --rm django_ikerocio django-admin compilemessages -l en
 ```
 
 ## Deployment

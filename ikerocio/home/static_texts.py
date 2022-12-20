@@ -20,7 +20,7 @@ data = {
         {
             "icon_class": "fab fa-aws",
             "title": _("Cloud Services"),
-            "description": _("La cara menos conocida de algunos proveedores como Amazon o Google. Conocí muchos de sus servicios en el Máster y es increible la cantidad de opciones que ofrece a medida del cliente."),
+            "description": _("La cara menos conocida de algunos proveedores como Amazon, Microsoft o Google. He trabajado profesionalmente en toda la plataforma de Azure y AWS. Es increible la cantidad de opciones que ofrece a medida del cliente."),
         },
         {
             "icon_class": "fab fa-python",
@@ -115,8 +115,12 @@ data = {
     ],
     "diplomas": [
         {
-            "url": "http://www.spri.eus/euskadinnova/es/enpresa-digitala/agenda/desarrollo-agil-con-python-django/3889.aspx",
-            "description": _("Desarrollo Web ágil con Python y Django (15h)"),
+            "url": "https://verified.elearnsecurity.com/certificates/cdbd4f81-182a-42f7-a48c-8c5199fe4b1d",
+            "description": _("eJPT: Junior Penetration Tester"),
+        },
+        {
+            "url": "https://www.credly.com/badges/4b7b87fe-3638-488d-8668-263beeca79f2?source=linked_in_profile",
+            "description": _("Microsoft Certified: Azure Fundamentals"),
         },
         {
             "url": "http://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html",
@@ -134,6 +138,10 @@ data = {
             "url": "https://learningnetwork.cisco.com/community/certifications/iot",
             "description": _("Cisco IoE: Introduction to the Internet of Everything"),
         },
+        {
+            "url": "http://www.spri.eus/euskadinnova/es/enpresa-digitala/agenda/desarrollo-agil-con-python-django/3889.aspx",
+            "description": _("Desarrollo Web ágil con Python y Django (15h)"),
+        }
     ],
     "degrees": [
         {

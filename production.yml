@@ -1,9 +1,6 @@
-version: '3'
-
 networks:
   default:
-    external:
-      name: ikerocio_network
+    name: ikerocio_network
 
 volumes:
   ikerocio_postgres_data: {}
@@ -67,7 +64,7 @@ services:
     volumes:
       - ./ikerocio/static:/staticfiles
     ports:
-      - "80"
+      - "80:80"
     restart: unless-stopped
     networks:
       default:

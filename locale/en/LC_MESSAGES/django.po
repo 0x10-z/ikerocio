@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-08 12:59+0000\n"
+"POT-Creation-Date: 2022-12-20 23:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,23 +26,15 @@ msgstr "Spanish"
 msgid "Inglés"
 msgstr "English"
 
-#: ikerocio/templates/index.html:107
-msgid "Hola, Mundo!"
-msgstr "Hey, world!"
-
-#: ikerocio/templates/index.html:108
-msgid ""
-"Amante del desarrollo de software y de Python en especial. Además, me gusta "
-"la física y la astronomía."
+#: ikerocio/home/apps.py:7
+msgid "Home"
 msgstr ""
-"I love software development and Python, specially. I am interested in "
-"Physics and Astronomy"
 
-#: ikerocio/templates/index.html:119
+#: ikerocio/home/static_texts.py:7
 msgid "Data Analysis"
 msgstr ""
 
-#: ikerocio/templates/index.html:120
+#: ikerocio/home/static_texts.py:8
 msgid ""
 "Siempre se puede extraer un poco más de los datos como si fuese jugo de un "
 "zumo de naranja. Mi experiencia con ellos hasta el momento ha sido puramente "
@@ -51,11 +43,11 @@ msgstr ""
 "There is too much information hidden in data. Mi experience with data "
 "analysis has been in academic environment but it has been awesome."
 
-#: ikerocio/templates/index.html:124
+#: ikerocio/home/static_texts.py:12
 msgid "Cybersec"
 msgstr ""
 
-#: ikerocio/templates/index.html:125
+#: ikerocio/home/static_texts.py:13
 msgid ""
 "Me encanta el mundo de la ciberseguridad y hacking ético. Está muy bien "
 "desarrollar producto, conectarse a la nube y todo eso pero no hay que perder "
@@ -65,11 +57,11 @@ msgstr ""
 "something good, connect devices to the cloud... but we cannot lose sight "
 "from security."
 
-#: ikerocio/templates/index.html:129
+#: ikerocio/home/static_texts.py:17
 msgid "DevOps"
 msgstr ""
 
-#: ikerocio/templates/index.html:130
+#: ikerocio/home/static_texts.py:18
 msgid ""
 "El mundo DevOps empezó a gustarme un poco más desde que descubrí tecnologías "
 "como Docker. A quien no le gusta automatizar tareas y levantar "
@@ -78,37 +70,38 @@ msgstr ""
 "DevOps world is something amazing. Technologies like Docker, automate tasks "
 "and build infrastructures in just few commands... is awesome."
 
-#: ikerocio/templates/index.html:134
+#: ikerocio/home/static_texts.py:22
 msgid "Cloud Services"
 msgstr ""
 
-#: ikerocio/templates/index.html:135
+#: ikerocio/home/static_texts.py:23
 msgid ""
-"La cara menos conocida de algunos proveedores como Amazon o Google. Conocí "
-"muchos de sus servicios en el Máster y es increible la cantidad de opciones "
-"que ofrece a medida del cliente."
+"La cara menos conocida de algunos proveedores como Amazon, Microsoft o "
+"Google. He trabajado profesionalmente en toda la plataforma de Azure y AWS. "
+"Es increible la cantidad de opciones que ofrece a medida del cliente."
 msgstr ""
-"Everyone knows Amazon and Google but just some of them knows services behind them. "
-"They offer a lot of useful cloud services that we can use."
+"Everyone knows Amazon, Microsoft or Google but just some of them knows "
+"services behind them. I've been working in Azure and AWS. They offer a lot "
+"of useful cloud services that we can use."
 
-#: ikerocio/templates/index.html:141
+#: ikerocio/home/static_texts.py:27
 msgid "Python"
 msgstr ""
 
-#: ikerocio/templates/index.html:142
+#: ikerocio/home/static_texts.py:28
 msgid ""
 "La simpleza y la potencia también pueden ir de la mano y Python es la prueba "
 "de ello. Mi elección cuando necesito desarrollar cosas en un corto espacio "
 "de tiempo."
 msgstr ""
-"This language is perfect when we need something working in a short piece of time. I "
-"love Python and its posibilities."
+"This language is perfect when we need something working in a short piece of "
+"time. I love Python and its posibilities."
 
-#: ikerocio/templates/index.html:146
+#: ikerocio/home/static_texts.py:32
 msgid "IT/OT"
 msgstr ""
 
-#: ikerocio/templates/index.html:147
+#: ikerocio/home/static_texts.py:33
 msgid ""
 "Me ha tocado trabajar con el mundo más industrial donde las máquinas se "
 "comunican entre ellas, además de exportar datos al cloud. Los informáticos "
@@ -118,11 +111,11 @@ msgstr ""
 "to cloud environment. IT team is very useful in this place supporting PLC "
 "world."
 
-#: ikerocio/templates/index.html:151
+#: ikerocio/home/static_texts.py:37
 msgid "Javascript"
 msgstr ""
 
-#: ikerocio/templates/index.html:152
+#: ikerocio/home/static_texts.py:38
 msgid ""
 "Hablar del Frontend en el siglo XXI sin nombrar Javascript o una de sus "
 "muchas librerías es imposible. Y no parece que vaya a cambiar. Por tanto... "
@@ -131,37 +124,37 @@ msgstr ""
 "We cannot speak about Frontend nowadays without Javascript. Really important "
 "on many web developments."
 
-#: ikerocio/templates/index.html:156
+#: ikerocio/home/static_texts.py:42
 msgid "CSS"
 msgstr ""
 
-#: ikerocio/templates/index.html:157
+#: ikerocio/home/static_texts.py:43
 msgid ""
 "Digan lo que digan. Las cosas siempre quedan más bonitas cuando las "
 "maquillas. Y el desarrollo web no iba a ser menos."
 msgstr ""
-"Things always look prettier when you put on makeup. Web "
-"development was not going to be less."
+"Things always look prettier when you put on makeup. Web development was not "
+"going to be less."
 
-#: ikerocio/templates/index.html:164
+#: ikerocio/home/static_texts.py:48
 msgid "Java"
 msgstr ""
 
-#: ikerocio/templates/index.html:165
+#: ikerocio/home/static_texts.py:49
 msgid ""
 "La potencia de la multiplataforma y su mercado. Hoy en día nos rodean "
 "infinidad de aplicaciones que derivan de este lenguaje. Además, fue con el "
 "que aprendí a programar de verdad."
 msgstr ""
-"The power of the multiplatform and its market. Today plenty of "
-"applications that derive from this language are surrounding us. Besides, it "
-"was the first language that I used to learn all concepts about OOP."
+"The power of the multiplatform and its market. Today plenty of applications "
+"that derive from this language are surrounding us. Besides, it was the first "
+"language that I used to learn all concepts about OOP."
 
-#: ikerocio/templates/index.html:170
+#: ikerocio/home/static_texts.py:53
 msgid "PHP"
 msgstr ""
 
-#: ikerocio/templates/index.html:171
+#: ikerocio/home/static_texts.py:54
 msgid ""
 "El primer lenguaje de programación web que descubrí. Todo lo básico sobre el "
 "desarrollo web lo aprendí gracias a el."
@@ -169,11 +162,11 @@ msgstr ""
 "The first web development language that I met. All basis from web "
 "development have been learned using PHP."
 
-#: ikerocio/templates/index.html:175
+#: ikerocio/home/static_texts.py:58
 msgid "SQL/NoSQL/Index"
 msgstr ""
 
-#: ikerocio/templates/index.html:176
+#: ikerocio/home/static_texts.py:59
 msgid ""
 "Existen bases de datos para todo. Hay que entender las necesidades que "
 "surgen en cada momento y saber adaptarlas a la tecnología disponible."
@@ -181,11 +174,11 @@ msgstr ""
 "There are many types of databases. There are different needs. We have to "
 "adapt them to technology."
 
-#: ikerocio/templates/index.html:180
+#: ikerocio/home/static_texts.py:63
 msgid "Android"
 msgstr ""
 
-#: ikerocio/templates/index.html:181
+#: ikerocio/home/static_texts.py:64
 msgid ""
 "Es innegable el auge que tienen los SO móviles hoy en día. Si no quieres "
 "convertirte en un dinosaurio, debes aprender algo sobre ello."
@@ -193,17 +186,41 @@ msgstr ""
 "Mobile platform is really important nowadays. It is important to know "
 "something about it."
 
-#: ikerocio/templates/index.html:188
-msgid "Experiencia"
+#: ikerocio/home/static_texts.py:69
+msgid "Kurago Software"
 msgstr ""
 
-#: ikerocio/templates/index.html:190
+#: ikerocio/home/static_texts.py:71
+msgid "2021-Actualidad"
+msgstr ""
+
+#: ikerocio/home/static_texts.py:72
+msgid "Desarrollador de software"
+msgstr ""
+
+#: ikerocio/home/static_texts.py:75
+msgid "SMC International Training"
+msgstr ""
+
+#: ikerocio/home/static_texts.py:77
+msgid "2018-2021"
+msgstr ""
+
+#: ikerocio/home/static_texts.py:78
 msgid ""
 "Trabajo en SMC desarrollando el MES del SIF-400. En medio de los entornos OT "
 "e IT."
 msgstr "I develop MES of SIF-400 in SMC. Between OT and IT environments."
 
-#: ikerocio/templates/index.html:191
+#: ikerocio/home/static_texts.py:81
+msgid "Becario Mondragon Unibertsitatea"
+msgstr ""
+
+#: ikerocio/home/static_texts.py:83
+msgid "2016-2017"
+msgstr ""
+
+#: ikerocio/home/static_texts.py:84
 msgid ""
 "Participé en un proyecto de investigación relacionado con el ML en máquinas "
 "de mecanizado por laser."
@@ -211,15 +228,23 @@ msgstr ""
 "I participated in a research project related to ML on laser machining "
 "system. "
 
-#: ikerocio/templates/index.html:193
-msgid ""
-"En mi tiempo libre siempre me han gustado los retos nuevos de aprender "
-"nuevas tecnologías y si puede ser de manera remunerada, mejor aun."
+#: ikerocio/home/static_texts.py:87
+msgid "Freelance"
 msgstr ""
-"I have always liked the new challenges of learning new technologies. When it "
-"is possible to earn money, even better."
 
-#: ikerocio/templates/index.html:194
+#: ikerocio/home/static_texts.py:89
+msgid "2015-2018"
+msgstr ""
+
+#: ikerocio/home/static_texts.py:93
+msgid "Njoy Party & Events"
+msgstr ""
+
+#: ikerocio/home/static_texts.py:95
+msgid "2014-2015"
+msgstr ""
+
+#: ikerocio/home/static_texts.py:96
 msgid ""
 "Desarrollador de Software, Webmaster y SysAdmin para ésta pequeña empresa de "
 "eventos. Software a medida para hacer del ocio algo aun más divertido."
@@ -227,50 +252,98 @@ msgstr ""
 "Software developer, webmaster and sysadmin on this small event company. "
 "Specific software to make parties more enjoyable."
 
-#: ikerocio/templates/index.html:199
-msgid "Asistencia a Conferencias / Charlas"
-msgstr "Conference assistance / Talks"
-
-#: ikerocio/templates/index.html:211
-msgid "Diplomas"
+#: ikerocio/home/static_texts.py:119
+msgid "eJPT: Junior Penetration Tester"
 msgstr ""
 
-#: ikerocio/templates/index.html:223
-msgid "Académico"
-msgstr "Education"
+#: ikerocio/home/static_texts.py:123
+msgid "Microsoft Certified: Azure Fundamentals"
+msgstr ""
 
-#: ikerocio/templates/index.html:225
+#: ikerocio/home/static_texts.py:127
+msgid "Cisco CCNA2: Routing and Switching essentials"
+msgstr ""
+
+#: ikerocio/home/static_texts.py:131
+msgid "Cisco CCNA3: Scaling Networks"
+msgstr ""
+
+#: ikerocio/home/static_texts.py:135
+msgid "Cisco CCNA4: Routing and Switching. Connecting Networks"
+msgstr ""
+
+#: ikerocio/home/static_texts.py:139
+msgid "Cisco IoE: Introduction to the Internet of Everything"
+msgstr ""
+
+#: ikerocio/home/static_texts.py:143
+msgid "Desarrollo Web ágil con Python y Django (15h)"
+msgstr ""
+
+#: ikerocio/home/static_texts.py:150
 msgid ""
 "Máster Universitario en Ciberseguridad, Análisis de datos y Computación en "
 "la nube"
 msgstr "Cybersecurity, Data Analysis and Cloud Computing Master's Degree"
 
-#: ikerocio/templates/index.html:226
+#: ikerocio/home/static_texts.py:156
 msgid "Ingeniería Informática"
 msgstr "Software Engineering"
 
-#: ikerocio/templates/index.html:229
-msgid "Sobre mí"
-msgstr "About me"
-
-#: ikerocio/templates/index.html:231
+#: ikerocio/home/static_texts.py:160
+#, fuzzy
+#| msgid ""
+#| "Soy una persona bastante competitiva en constante aprendizaje y de un "
+#| "perfil muy tecnico. Además, en mis ratos libres, me gusta disfrutar de la "
+#| "música, los amigos y el deporte."
 msgid ""
 "Soy una persona bastante competitiva en constante aprendizaje y de un perfil "
 "muy tecnico. Además, en mis ratos libres, me gusta disfrutar de la música, "
-"los amigos y el deporte."
+"los amigos y el deporte. En ocasiones, escribo cosas en el blog."
 msgstr ""
 "I am a very competitive person in a constant learning time. My profile is "
 "very analytic. I spend free time listening music, with my friends and doing "
 "sport."
 
-#: ikerocio/users/apps.py:7
-msgid "Users"
+#: ikerocio/templates/index.html:62
+msgid "Hola, Mundo!"
+msgstr "Hey, world!"
+
+#: ikerocio/templates/index.html:65
+msgid ""
+"Amante del desarrollo de software y de Python en especial. Además, me gusta "
+"la física y la astronomía."
+msgstr ""
+"I love software development and Python, specially. I am interested in "
+"Physics and Astronomy"
+
+#: ikerocio/templates/index.html:96
+msgid "Experiencia y educación"
 msgstr ""
 
-#: ikerocio/users/forms.py:17
-msgid "This username has already been taken."
+#: ikerocio/templates/index.html:108
+msgid "Académico"
+msgstr "Education"
+
+#: ikerocio/templates/index.html:124
+msgid "Diplomas"
 msgstr ""
 
-#: ikerocio/users/models.py:11
-msgid "Name of User"
+#: ikerocio/templates/index.html:135
+msgid "Asistencia a Conferencias / Charlas"
+msgstr "Conference assistance / Talks"
+
+#: ikerocio/templates/index.html:144
+msgid "Sobre mí"
+msgstr "About me"
+
+#: ikerocio/templates/index.html:155
+msgid "Redes sociales"
 msgstr ""
+
+#~ msgid ""
+#~ "En mi tiempo libre siempre me han gustado los retos nuevos de aprender "
+#~ "nuevas tecnologías y si puede ser de manera remunerada, mejor aun."
+#~ msgstr ""
+#~ "I have always liked the new challenges of learning new technologies. When "
+#~ "it is possible to earn money, even better."
