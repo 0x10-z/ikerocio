@@ -1,11 +1,10 @@
 version: '3'
 networks:
   default:
-    external:
-      name: ikerocio_network
+    name: ikerocio_network
 services:
   mariadb:
-    image: docker.io/bitnami/mariadb:10.3
+    image: docker.io/bitnami/mariadb:10.8.6
     volumes:
       - 'mariadb_data:/bitnami/mariadb'
     environment:
@@ -14,11 +13,16 @@ services:
       - MARIADB_ROOT_PASSWORD=itdCZfcHQb57zJiuTTyUXRMCM0jxtWD7jhjsO
       - MARIADB_PASSWORD=itdCZfcHQb57zJiuTTyUXRMCM0jxtWD7jhjsO
     restart: unless-stopped
-
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+        reservations:
+          memory: 128M
   ghost:
-    image: docker.io/bitnami/ghost:4
+    image: docker.io/bitnami/ghost:latest
     ports:
-      - '2368'
+      - '2368:2368'
     volumes:
       - 'ghost_data:/bitnami/ghost'
     depends_on:

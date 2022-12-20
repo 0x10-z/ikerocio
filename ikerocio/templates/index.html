@@ -2,6 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        {% now "m" as current_month %}
+        <meta month="{{current_month}}">
+        {% if current_month == "11" or current_month == "12" or current_month == "01"%}
+        <script defer src="https://app.embed.im/snow.js?{{ current_month }}"></script>
+        {% endif %}
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- SEO
