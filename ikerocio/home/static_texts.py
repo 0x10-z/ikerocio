@@ -189,15 +189,15 @@ data = {
         {
             "image": "image/portfolio/mubreakout.png",
             "name": "MU Breakout",
-            "style": "color:white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;",
+            "style": "color:white; text-shadow: #000 2px 1px 1px;",
             "repository_image": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-            "language_image": "https://image.flaticon.com/icons/png/512/919/919852.png",
+            "language_image": "https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png",
             "url": "https://github.com/iocio005/mubreakout",
         },
         {
             "image": "image/portfolio/aitor_viewbook.png",
             "name": "Aitor Viewbook",
-            "style": "color:red;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;",
+            "style": "color:white;    text-shadow: #000 2px 1px 1px;",
             "repository_image": "https://img.icons8.com/color/452/bitbucket.png",
             "language_image": "https://monadical.com/static/5-paquetes-django.png",
             "url": "https://aitorrayo.com",
@@ -205,7 +205,7 @@ data = {
         {
             "image": "image/portfolio/ezdago.png",
             "name": "Ez dago Gasteiz B",
-            "style": "color:green;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;",
+            "style": "color:green;    text-shadow: #000 2px 1px 1px;",
             "repository_image": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
             "language_image": "https://monadical.com/static/5-paquetes-django.png",
             "url": "https://ezdagogasteizb.eus",

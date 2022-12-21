@@ -167,9 +167,7 @@
         <div class="container py-5" id="custom-cards">
             <h2 class="pb-2 border-bottom">Portfolio</h2>
           
-            <div class="row row-cols-3 align-items-stretch py-5">
-                
-            
+            <div class="row row-cols-3 align-items-stretch py-5">            
                 {% for project in portfolio %}
                 <div class="col-12 col-md-6 col-lg-4 my-2">
                     <a href="{{ project.url }}" target="_blank">
@@ -191,6 +189,7 @@
                 {% endfor %}
             </div>
         </div>
+        
         <div class="b-divider"></div>
 
     <!--GOOGLE ANALYTICS -->
