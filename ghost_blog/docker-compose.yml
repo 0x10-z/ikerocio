@@ -12,7 +12,7 @@ services:
       - MARIADB_DATABASE=bitnami_ghost
       - MARIADB_ROOT_PASSWORD=itdCZfcHQb57zJiuTTyUXRMCM0jxtWD7jhjsO
       - MARIADB_PASSWORD=itdCZfcHQb57zJiuTTyUXRMCM0jxtWD7jhjsO
-    restart: unless-stopped
+    restart: always
     deploy:
       resources:
         limits:
@@ -36,7 +36,7 @@ services:
       - GHOST_DATABASE_USER=bn_ghost
       - GHOST_DATABASE_NAME=bitnami_ghost
       - GHOST_ENABLE_HTTPS=yes
-    restart: unless-stopped
+    restart: always
 volumes:
   mariadb_data:
     driver: local
