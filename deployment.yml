@@ -8,9 +8,6 @@ volumes:
 
 services:
   django_ikerocio:
-    build:
-      context: .
-      dockerfile: ./compose/production/django/Dockerfile
     image: iocio005/ikerocio_production_django
     depends_on:
       - postgres_ikerocio
@@ -36,9 +33,6 @@ services:
       default:
 
   postgres_ikerocio:
-    build:
-      context: .
-      dockerfile: ./compose/production/postgres/Dockerfile
     image: iocio005/ikerocio_production_postgres
     volumes:
       - ikerocio_postgres_data:/var/lib/postgresql/data:Z
@@ -55,9 +49,6 @@ services:
       default:
 
   nginx_ikerocio:
-    build:
-      context: .
-      dockerfile: ./compose/production/nginx/Dockerfile
     image: iocio005/ikerocio_production_nginx
     depends_on:
       - django_ikerocio
