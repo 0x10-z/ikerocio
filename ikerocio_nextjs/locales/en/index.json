@@ -1,4 +1,14 @@
 {
   "helloWorld": "Hey, World!",
-  "personalDescription": "I love software development and Python, specially. I am interested in Physics and Astronomy."
+  "personalDescription": "I love software development and Python, specially. I am interested in Physics and Astronomy.",
+  "skills": "Skills",
+  "skillDataAnalysis": "Data Analysis",
+  "skillDataAnalysisDescription": "There is too much information hidden in data. Mi experience with data analysis has been in academic environment but it has been awesome.",
+  "skillCybersec": "Cybersec",
+  "skillCybersecDescription": "I love cyber-security and ethical hacking world. Product development is something good, connect devices to the cloud... but we cannot lose sight from security.",
+  "skillDevops": "DevOps",
+  "skillDevopsDescription": "DevOps world is something amazing. Technologies like Docker, automate tasks and build infrastructures in just few commands... is awesome.",
+  "skillCloud": "Cloud Services",
+  "skillCloudDescription": "Everyone knows Amazon, Microsoft or Google but just some of them knows services behind them. I've been working in Azure and AWS. They offer a lot of useful cloud services that we can use.",
+  "experience": "Experience"
 }

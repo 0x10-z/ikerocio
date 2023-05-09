@@ -1,4 +1,6 @@
 {
   "helloWorld": "Hola, Mundo!",
-  "personalDescription": "Amante del desarrollo de software y de Python en especial. Además, me gusta la física y la astronomía."
+  "personalDescription": "Amante del desarrollo de software y de Python en especial. Además, me gusta la física y la astronomía.",
+  "skillDataAnalysis": "Análisis de datos",
+  "skillDataAnalysisDescription": "Siempre se puede extraer un poco más de los datos como si fuese jugo de un zumo de naranja. Mi experiencia con ellos hasta el momento ha sido puramente academico pero me gusta trabajar en este campo."
 }

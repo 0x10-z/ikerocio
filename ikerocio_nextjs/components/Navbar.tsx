@@ -1,13 +1,13 @@
 import Link from "next/link";
-import useTranslation from "next-translate/useTranslation";
+import useIndexTranslation from "../pages/hooks/IndexTranslation";
 import Image from "next/image";
 
-export default function Header() {
-  const { t, lang } = useTranslation("index");
+export default function Navbar() {
+  const { t, lang } = useIndexTranslation();
 
   return (
-    <header className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-      <nav className="border-b border-gray-200 container mx-auto flex flex-wrap items-center justify-between p-5">
+    <header className="text-gray-900 dark:text-white">
+      <nav className="border-b dark:border-gray-900 border-gray-200 container mx-auto flex flex-wrap items-center justify-between p-5">
         <div className="flex items-center">
           <Image
             src="/image/io-icon.png"
@@ -16,7 +16,7 @@ export default function Header() {
             alt="Logo"
             className="h-10 mr-3"
           />
-          <span className="font-semibold text-xl tracking-tight">
+          <span className="font-bold text-xl tracking-tight">
             Iker Ocio Zuazo
           </span>
         </div>

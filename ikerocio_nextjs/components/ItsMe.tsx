@@ -1,5 +1,4 @@
-import Link from "next/link";
-import useIndexTranslation from "./IndexTranslation";
+import useIndexTranslation from "../pages/hooks/IndexTranslation";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -22,8 +21,8 @@ export default function ItsMe() {
         <Image
           src="/image/iker.png"
           alt="Iker Ocio Avatar"
-          width={300}
-          height={300}
+          width={250}
+          height={250}
           className=" rounded-lg"
         />
       </div>
@@ -40,15 +39,12 @@ export default function ItsMe() {
             src={
               theme === "light"
                 ? "/image/switch-on.png"
-                : "/image/switch-off.png"
+                : "/image/switch-off-white.png"
             }
             className="ml-2"
           />
         </div>
-        <p className="text-lg">
-          I love software development and Python, specially. I am interested in
-          Physics and Astronomy.
-        </p>
+        <p className="text-lg">{t("personalDescription")}</p>
       </div>
     </div>
   );
