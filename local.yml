@@ -1,44 +1,15 @@
-volumes:
-  local_postgres_data: {}
-  local_postgres_data_backups: {}
-
 services:
-  django_ikerocio:
+  nextjs_ikerocio:
     build:
       context: .
-      dockerfile: ./compose/local/django/Dockerfile
-    image: ikerocio_local_django
-    container_name: django_ikerocio
-    depends_on:
-      - postgres_ikerocio
+      dockerfile: ./compose/local/nextjs/Dockerfile
+    image: ikerocio_local_nextjs
+    container_name: nextjs_ikerocio
     volumes:
       - .:/app:z
     environment:
-      # postgres
-      - 'POSTGRES_HOST=postgres_ikerocio'
-      - 'POSTGRES_PORT=5432'
-      - 'POSTGRES_DB=prueba_1'
-      - 'POSTGRES_USER=debug'
-      - 'POSTGRES_PASSWORD=debug'
-      # django
-      - 'USE_DOCKER=yes'
-      - 'IPYTHONDIR=/app/.ipython'
+      # nextjs
+      - "USE_DOCKER=yes"
     ports:
-      - "8000:8000"
+      - "5000:5000"
     command: /start
-
-  postgres_ikerocio:
-    build:
-      context: .
-      dockerfile: ./compose/production/postgres/Dockerfile
-    image: production_postgres
-    container_name: postgres_ikerocio
-    volumes:
-      - local_postgres_data:/var/lib/postgresql/data:Z
-      - local_postgres_data_backups:/backups:z
-    environment:
-      - 'POSTGRES_HOST=postgres_ikerocio'
-      - 'POSTGRES_PORT=5432'
-      - 'POSTGRES_DB=prueba_1'
-      - 'POSTGRES_USER=debug'
-      - 'POSTGRES_PASSWORD=debug'
