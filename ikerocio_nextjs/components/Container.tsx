@@ -15,7 +15,7 @@ export default function Container({ title, children }: ContainerProps) {
   const { t } = useIndexTranslation();
   return (
     <div className="container mx-auto m-10 flex flex-col md:flex-row items-center">
-      <div className="">
+      <div className="w-full">
         <h2 className="border-b dark:border-white border-gray-200 text-2xl mb-8">
           {title}
         </h2>

@@ -1,16 +1,16 @@
 export class Education {
-  title: string;
+  university: string;
   description: string;
   dateString: string;
   dateUrl: string;
 
   constructor(
-    title: string,
+    university: string,
     description: string,
     dateString: string,
     dateUrl: string
   ) {
-    this.title = title;
+    this.university = university;
     this.description = description;
     this.dateString = dateString;
     this.dateUrl = dateUrl;

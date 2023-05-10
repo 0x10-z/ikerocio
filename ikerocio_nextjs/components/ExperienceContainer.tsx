@@ -32,7 +32,7 @@ export default function ExperienceContainer({
   return (
     <section className="dark:bg-gray-900 w-screen bg-white">
       <div className="mx-auto max-w-screen-xl py-2">
-        <Container title={t("Experience & education")}>
+        <Container title={t("experience")}>
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
             <ul className="list-disc">
               {experiences &&
@@ -49,7 +49,7 @@ export default function ExperienceContainer({
             <div>
               <div className="flex items-center justify-start font-bold">
                 <FontAwesomeIcon icon={faCertificate} className="w-8 mr-2" />
-                <h3>{t("Diplomas")}</h3>
+                <h3>{t("cert")}</h3>
               </div>
               <ul className="list-disc">
                 {certifications &&
@@ -68,14 +68,14 @@ export default function ExperienceContainer({
             <div>
               <div className="flex items-center justify-start font-bold">
                 <FontAwesomeIcon icon={faGraduationCap} className="w-8 mr-2" />
-                <h3>{t("Education")}</h3>
+                <h3>{t("education")}</h3>
               </div>
               <ul className="list-disc">
                 {education &&
                   education.map((ed, index) => (
                     <ExperienceField
                       key={index}
-                      title={ed.title}
+                      title={ed.university}
                       description={ed.description}
                       dateString={ed.dateString}
                       dateUrl={ed.dateUrl}

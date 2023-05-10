@@ -41,7 +41,7 @@ export default function ItsMe() {
                 ? "/image/switch-on.png"
                 : "/image/switch-off-white.png"
             }
-            className="ml-2"
+            className="ml-2 hover:ring"
           />
         </div>
         <p className="text-lg">{t("personalDescription")}</p>

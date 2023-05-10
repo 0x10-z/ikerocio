@@ -23,13 +23,13 @@ export default function Navbar() {
         <div className="flex dark:text-black">
           <Link
             href="/"
-            className="btn inline-block py-1 px-4 bg-gray-200 dark:bg-white rounded-lg"
+            className="btn active:ring hover:bg-gray-300 inline-block py-1 px-4 bg-gray-200 dark:bg-white dark:hover:bg-gray-400 rounded-lg"
             locale="en">
             English
           </Link>
           <Link
             href="/"
-            className="btn inline-block py-1 px-4 bg-gray-200 dark:bg-white rounded-lg ml-2"
+            className="btn active:ring hover:bg-gray-300 inline-block py-1 px-4 bg-gray-200 dark:bg-white dark:hover:bg-gray-400 rounded-lg ml-2"
             locale="es">
             Español
           </Link>

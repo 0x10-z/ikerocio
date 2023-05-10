@@ -6,8 +6,10 @@ const nextTranslate = require("next-translate-plugin");
 //   ...nextTranslate(),
 // };
 
-const nextConfig = nextTranslate({
+const nextTranslateConfig = nextTranslate({
   reactStrictMode: true,
 });
 
-module.exports = nextConfig;
+module.exports = {
+  ...nextTranslateConfig,
+};
