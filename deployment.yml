@@ -1,5 +1,5 @@
 services:
   ikerocio_prod_nextjs:
-    image: iocio005/fikerocio_prod_nextjs:latest
+    image: iocio005/ikerocio_prod_nextjs:latest
     ports:
-      - "80:80"
+      - "80:3000"
