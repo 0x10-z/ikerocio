@@ -10,7 +10,7 @@ RUN npm ci --silent
 RUN npm install -D postcss-cli --silent
 #RUN npm install react-scripts@3.4.1 -g --silent
 
-COPY ./ikerocio /app
+COPY ./ikerocio/ /app/
 
 RUN npm run build
 
@@ -26,6 +26,9 @@ RUN npm ci --production
 COPY --from=build /app/.next /app/.next
 COPY --from=build /app/public /app/public
 
+COPY --from=build /app/next.config.js /app/next.config.js
+COPY --from=build /app/i18n.json /app/i18n.json
+
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD ["node", ".next/standalone/server.js"]

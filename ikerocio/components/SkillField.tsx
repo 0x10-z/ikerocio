@@ -22,7 +22,7 @@ export default function SkillField({
       style={{ pointerEvents: canBeClicked ? "auto" : "none" }}
       className={
         `flex flex-col space-x-4 ` + canBeClicked
-          ? "transition duration-300 ease-in-out hover:rounded p-2 hover:bg-gray-100 hover:shadow-xl hover:transform hover:scale-110 hover:-rotate-6"
+          ? "transition duration-300 ease-in-out hover:dark:text-black hover:rounded p-2 hover:bg-gray-200 hover:dark:bg-gray-300 hover:shadow-xl hover:transform hover:scale-110 hover:-rotate-6"
           : ""
       }>
       <div className="flex flex-row ml-3 items-center justify-start">
