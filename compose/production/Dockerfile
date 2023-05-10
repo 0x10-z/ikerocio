@@ -31,4 +31,4 @@ COPY --from=build /app/i18n.json /app/i18n.json
 
 EXPOSE 3000
 
-CMD ["node", ".next/standalone/server.js"]
+CMD ["npm", "start"]
