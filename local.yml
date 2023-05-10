@@ -2,14 +2,13 @@ services:
   nextjs_ikerocio:
     build:
       context: .
-      dockerfile: ./compose/local/nextjs/Dockerfile
+      dockerfile: ./compose/local/Dockerfile
     image: ikerocio_local_nextjs
     container_name: nextjs_ikerocio
     volumes:
-      - .:/app:z
+      - ./ikerocio:/app:z
     environment:
       # nextjs
       - "USE_DOCKER=yes"
     ports:
-      - "5000:5000"
-    command: /start
+      - "3000:3000"

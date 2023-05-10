@@ -2,69 +2,15 @@ networks:
   default:
     name: ikerocio_network
 
-volumes:
-  ikerocio_postgres_data: {}
-  ikerocio_postgres_data_backups: {}
-
 services:
-  django_ikerocio:
+  nextjs_ikerocio:
     build:
       context: .
-      dockerfile: ./compose/production/django/Dockerfile
-    image: iocio005/ikerocio_production_django
-    depends_on:
-      - postgres_ikerocio
+      dockerfile: ./compose/production/Dockerfile
+    image: iocio005/ikerocio_prod_nextjs:latest
+    container_name: ikerocio_prod_nextjs
     environment:
-      - "DJANGO_ALLOWED_HOSTS=.ikerocio.com,www.ikerocio.com,localhost"
-      - "DJANGO_SETTINGS_MODULE=config.settings.production"
-      - "DJANGO_SECRET_KEY=xQDtmgrz5EscFFxLKQ068ERp0SPxtgBOKOkdsUU4F5t4SWQZstD0S5iSWBKj2Elj"
-      - "DJANGO_ADMIN_URL=ty3Lgv8rPuvAw3bkOSZPd3j7JaX1mEc2/"
-      - "DJANGO_SECURE_SSL_REDIRECT=False"
-      - "DJANGO_SERVER_EMAIL="
-      - "MAILGUN_API_KEY="
-      - "MAILGUN_DOMAIN="
-      - "WEB_CONCURRENCY=2"
-      # postgres
-      - "POSTGRES_HOST=postgres_ikerocio"
-      - "POSTGRES_PORT=5432"
-      - "POSTGRES_DB=prueba_1"
-      - "POSTGRES_USER=debug"
-      - "POSTGRES_PASSWORD=debug"
-    command: /start
-    restart: unless-stopped
-    networks:
-      default:
-
-  postgres_ikerocio:
-    build:
-      context: .
-      dockerfile: ./compose/production/postgres/Dockerfile
-    image: iocio005/ikerocio_production_postgres
-    volumes:
-      - ikerocio_postgres_data:/var/lib/postgresql/data:Z
-      - ikerocio_postgres_data_backups:/backups:z
-    environment:
-      # postgres
-      - "POSTGRES_HOST=postgres_ikerocio"
-      - "POSTGRES_PORT=5432"
-      - "POSTGRES_DB=prueba_1"
-      - "POSTGRES_USER=debug"
-      - "POSTGRES_PASSWORD=debug"
-    restart: unless-stopped
-    networks:
-      default:
-
-  nginx_ikerocio:
-    build:
-      context: .
-      dockerfile: ./compose/production/nginx/Dockerfile
-    image: iocio005/ikerocio_production_nginx
-    depends_on:
-      - django_ikerocio
-    volumes:
-      - ./ikerocio/static:/staticfiles
+      # nextjs
+      - "USE_DOCKER=yes"
     ports:
-      - "80"
-    restart: unless-stopped
-    networks:
-      default:
+      - "8080:3000"
