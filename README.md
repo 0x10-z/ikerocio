@@ -1,22 +1,10 @@
 # Ikerocio.com
 
-
-## Translations
+## Deploy NextJS
 
 ```sh
-docker-compose -f local.yml run --rm django_ikerocio django-admin makemessages -l en 
-
-docker-compose -f local.yml run --rm django_ikerocio django-admin compilemessages -l en
-```
-
-## Deployment
-
-```
-git pull
-
-docker-compose -f production.yml build
-
-docker-compose -f production.yml down && docker-compose -f production.yml up -d
+current_date=$(date +'%y.%m.%d-%H%M%S')
+echo APP_VERSION=$current_date > ikerocio/.env.local
 ```
 
 ## Deployment debug in local
@@ -31,10 +19,4 @@ Then, run docker-compose
 
 ```sh
 docker-compose -f production.yml up
-```
-
-## Each new deployment if db is recreated
-
-```sh
-docker-compose -f production.yml run --rm django_ikerocio python manage.py migrate
 ```

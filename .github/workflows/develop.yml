@@ -17,6 +17,12 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Prepare env files
+        run: |
+          current_date=$(date +'%y.%m.%d-%H%M%S')
+          echo APP_VERSION=$current_date > ikerocio/.env.local
+
       - name: Build and push Docker Compose
         run: |
           docker-compose -f production.yml build
