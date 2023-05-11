@@ -1,3 +1,6 @@
+networks:
+  default:
+    name: ikerocio_network
 services:
   ikerocio_prod_nextjs:
     image: iocio005/ikerocio_prod_nextjs:latest
