@@ -8,7 +8,6 @@ COPY ./ikerocio/package-lock.json /app
 
 RUN npm ci --silent
 RUN npm install -D postcss-cli --silent
-#RUN npm install react-scripts@3.4.1 -g --silent
 
 COPY ./ikerocio/ /app/
 

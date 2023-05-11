@@ -22,9 +22,11 @@ jobs:
         run: |
           current_date=$(date +'%y.%m.%d-%H%M%S')
           echo APP_VERSION=$current_date > ikerocio/.env.local
+          ls -la ikerocio/
 
       - name: Build and push Docker Compose
         run: |
+          ls -la ikerocio/
           docker-compose -f production.yml build
           docker-compose -f production.yml push
       - name: Configure SSH
@@ -36,4 +38,4 @@ jobs:
 
       - name: Deploy code
         run: |
-          ssh ec2-user@ikerocio.com "cd ikerocio && git pull && docker-compose -f deployment.yml pull && docker-compose -f deployment.yml up -d"
+          ssh ec2-user@ikerocio.com "cd ikerocio && git pull && docker-compose -f deployment.yml stop && docker-compose -f deployment.yml pull && docker-compose -f deployment.yml up -d"
