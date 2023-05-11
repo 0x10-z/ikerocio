@@ -30,4 +30,4 @@ jobs:
 
       - name: Deploy code
         run: |
-          ssh ec2-user@ikerocio.com "cd ikerocio && docker-compose -f deployment.yml pull && docker-compose -f deployment.yml up -d"
+          ssh ec2-user@ikerocio.com "cd ikerocio && git pull && docker-compose -f deployment.yml pull && docker-compose -f deployment.yml up -d"
