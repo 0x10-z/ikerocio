@@ -6,3 +6,4 @@ services:
     image: iocio005/ikerocio_prod_nextjs:latest
     ports:
       - "3000"
+    restart: always
