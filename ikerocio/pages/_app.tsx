@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
     return currentMonth === 11 || currentMonth === 0 || currentMonth === 1;
   };
 
-  ReactGA.initialize("368196523");
+  ReactGA.initialize("G-5DWQZQ9EZD");
 
   return (
     <>
