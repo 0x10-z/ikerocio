@@ -153,20 +153,26 @@ export const rrss = [
 
 export const projects = [
   new Project(
+    "Retrogasteiz",
+    "/image/portfolio/retrogasteiz_landscape2.png",
+    ["/image/portfolio/python.png", "/image/portfolio/react.png"],
+    "https://retrogasteiz.com"
+  ),
+  new Project(
     "FastGPT",
-    "/image/portfolio/fastapi.png",
+    "/image/portfolio/fastapi_landscape2.png",
     ["/image/portfolio/python.png", "/image/portfolio/react.png"],
     "https://chat.ikerocio.com"
   ),
   new Project(
     "EzdagoGasteizB",
-    "/image/portfolio/ezdago.png",
+    "/image/portfolio/ezdago_landscape2.png",
     ["/image/portfolio/django.png", "/image/portfolio/python.png"],
     "https://ezdagogasteizb.ikerocio.com"
   ),
   new Project(
     "Aitor viewbook",
-    "/image/portfolio/aitor_viewbook.png",
+    "/image/portfolio/aitor_viewbook_landscape3.png",
     ["/image/portfolio/django.png", "/image/portfolio/python.png"],
     "https://aitorrayo.com"
   ),

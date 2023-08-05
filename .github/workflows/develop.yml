@@ -21,7 +21,7 @@ jobs:
       - name: Prepare env files
         run: |
           current_date=$(date +'%y.%m.%d-%H%M%S')
-          echo APP_VERSION=$current_date > ikerocio/.env.local
+          echo NEXT_PUBLIC_APP_VERSION=$current_date > ikerocio/.env.local
           ls -la ikerocio/
 
       - name: Build and push Docker Compose

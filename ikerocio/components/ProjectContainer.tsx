@@ -14,7 +14,7 @@ export default function ProjectContainer({ projects }: ProjectContainerProps) {
     <section className="dark:bg-gray-900 w-screen bg-white">
       <div className="mx-auto max-w-screen-xl py-2">
         <Container title={t("Portfolio")}>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 gap-6 lg:mx-auto lg:max-w-4xl">
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}
