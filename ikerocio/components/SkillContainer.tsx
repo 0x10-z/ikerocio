@@ -2,6 +2,7 @@ import SkillField from "./SkillField";
 import Container from "./Container";
 import { Skill } from "@/models/Skill";
 import useIndexTranslation from "@/hooks/IndexTranslation";
+import "animate.css";
 
 interface SkillContainerProps {
   skills: Skill[];
@@ -14,7 +15,7 @@ export default function SkillContainer({ skills }: SkillContainerProps) {
     <section className="dark:bg-gray-900 w-screen bg-white">
       <div className="mx-auto max-w-screen-xl py-2">
         <Container title={t("skills")}>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="animate__animated animate__fadeInUp grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {skills.map((skill, index) => (
               <SkillField
                 key={index}

@@ -17,7 +17,7 @@ export default function ItsMe() {
 
   return (
     <div className="container mx-auto m-10 mx-40 flex flex-col md:flex-row items-center">
-      <div className="order-first">
+      <div className="order-first animate__animated animate__pulse">
         <Image
           priority={true}
           src="/image/iker.png"
@@ -43,7 +43,7 @@ export default function ItsMe() {
                 ? "/image/switch-on.png"
                 : "/image/switch-off-white.png"
             }
-            className="ml-2 hover:ring"
+            className="ml-2 hover:ring animate__infinite animate__animated animate__pulse"
           />
         </div>
         <p className="text-lg">{t("personalDescription")}</p>

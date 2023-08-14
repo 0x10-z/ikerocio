@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <header className="text-gray-900 dark:text-white">
-      <nav className="border-b dark:border-gray-900 border-gray-200 container mx-auto flex flex-wrap items-center justify-between p-5">
+      <nav className="border-b dark:border-gray-900 border-gray-200 container mx-auto flex flex-wrap items-center justify-between p-5 animate__animated animate__fadeInDown">
         <div className="flex items-center">
           <Image
             src="/image/io-icon.png"
@@ -24,13 +24,15 @@ export default function Navbar() {
           <Link
             href="/"
             className="btn active:ring hover:bg-gray-300 inline-block py-1 px-4 bg-gray-200 dark:bg-white dark:hover:bg-gray-400 rounded-lg"
-            locale="en">
+            locale="en"
+          >
             English
           </Link>
           <Link
             href="/"
             className="btn active:ring hover:bg-gray-300 inline-block py-1 px-4 bg-gray-200 dark:bg-white dark:hover:bg-gray-400 rounded-lg ml-2"
-            locale="es">
+            locale="es"
+          >
             Español
           </Link>
         </div>
