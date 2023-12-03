@@ -3,6 +3,7 @@ networks:
     name: ikerocio_network
 services:
   ikerocio_prod_nextjs:
+    container_name: ikerocio_prod_nextjs
     image: iocio005/ikerocio_prod_nextjs:latest
     ports:
       - "3000:3000"
