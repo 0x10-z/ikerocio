@@ -1,4 +1,4 @@
-FROM node:18.16.0-alpine as build
+FROM node:20.10.0-alpine as build
 
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
@@ -14,7 +14,7 @@ COPY ./ikerocio/ /app/
 RUN npm run build
 
 # production environment
-FROM node:18.16.0-alpine as production
+FROM node:20.10.0-alpine as production
 
 WORKDIR /app
 
