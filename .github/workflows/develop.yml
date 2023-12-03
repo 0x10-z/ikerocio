@@ -35,7 +35,7 @@ jobs:
           echo "${{ secrets.IKEROCIOCOM_LIGHTSAIL_SSHKEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan ikerocio.com >> ~/.ssh/known_hosts
-          echo "Done"
+          echo "Done."
 
       - name: Deploy code
         run: |
