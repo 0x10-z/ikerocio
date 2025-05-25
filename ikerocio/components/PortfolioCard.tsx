@@ -7,8 +7,8 @@ interface PortfolioCardProps {
   title: string;
   description: string;
   tags: string[];
-  codeUrl: string;
-  url: string;
+  codeUrl: string | null;
+  url: string | null;
 }
 
 export const PortfolioCard: FC<PortfolioCardProps> = ({

@@ -3,7 +3,6 @@ import Divider from "../components/Divider";
 import SkillContainer from "@/components/SkillContainer";
 import PageHeader from "@/components/PageHeader";
 import ExperienceContainer from "@/components/ExperienceContainer";
-import ProjectContainer from "@/components/ProjectContainer";
 import { skills, experiences, educations, certs, rrss, projects } from "@/data";
 import Footer from "@/components/Footer";
 import PortfolioGrid from "@/components/PortfolioGrid";
