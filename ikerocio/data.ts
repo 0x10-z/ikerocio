@@ -153,27 +153,84 @@ export const rrss = [
 
 export const projects = [
   new Project(
+    "Image 2 PDF converter",
+    "/image/portfolio/image-to-pdf.png",
+    "https://github.com/0x10-z/image-to-pdf-converter",
+    "https://image-to-pdf-converter-two.vercel.app/",
+    ["React", "PDF", "Tool", "Frontend"],
+    "Convierte una imagen en PDF directamente desde tu dispositivo sin subirlo a ningún sitio"
+  ),
+  new Project(
+    "Whatsapp Chat Analyzer",
+    "/image/portfolio/whatsapp-chat-analyzer.png",
+    "https://github.com/0x10-z/Whatsapp-Chat-Analyzer",
+    "https://whatsapp-chat-analyzer-two.vercel.app/",
+    ["React", "Chat Analysis", "Visualization", "Tool"],
+    "Analiza las conversaciones de Whatsapp de una manera muy sencilla y descubre quien es tu amigo más pesado"
+  ),
+  new Project(
+    "IPTV List Manager",
+    "/image/portfolio/iptv-list-manager.png",
+    "https://github.com/0x10-z/iptv-list-manager",
+    "https://iptv-list-manager.vercel.app/",
+    ["React", "Media", "Tool", "Frontend"],
+    "Gestiona tus listas de canales de IPTV de una manera sencilla y quédate con el mejor contenido"
+  ),
+  new Project(
+    "One Cat a Day",
+    "/image/portfolio/one-cat-a-day.png",
+    "https://github.com/0x10-z/One-Cat-a-Day",
+    "https://one-cat-a-day.vercel.app/",
+    ["React Native", "Mobile App", "Humor", "Daily Content"],
+    "Colecciona todas las imágenes de los gatos más divertidos de la red. Descubre uno nuevo cada día"
+  ),
+  new Project(
     "Retrogasteiz",
     "/image/portfolio/retrogasteiz_landscape2.png",
-    ["/image/portfolio/python.png", "/image/portfolio/react.png"],
-    "https://retrogasteiz.com"
+    "https://github.com/0x10-z/retrogasteiz",
+    "https://retrogasteiz.com",
+    ["Python", "AI", "Image Processing", "Photography", "Personal"],
+    "Descubre más de 130.000 fotos de Vitoria-Gasteiz como nunca antes la habías visto"
+  ),
+  new Project(
+    "DB Multiverse",
+    "/image/portfolio/dbmultiverse.png",
+    "https://github.com/0x10-z/python-dbuniverse-downloader",
+    "https://github.com/0x10-z/python-dbuniverse-downloader/releases/tag/DragonBallMultiverse-PDF-latest",
+    ["Python", "Scraping", "PDF"],
+    "Un proyecto personal que scrapea un sitio web creado por la comunidad fan de Dragon Ball y crea un PDF con todos los comics"
   ),
   new Project(
     "FastGPT",
     "/image/portfolio/fastapi_landscape2.png",
-    ["/image/portfolio/python.png", "/image/portfolio/react.png"],
-    "https://chat.ikerocio.com"
+    "https://github.com/0x10-z/fast-gpt",
+    null,
+    ["FastAPI", "React", "OpenAI", "Chatbot", "Fullstack"],
+    "Un chat GPT hecho con Python y React"
   ),
   new Project(
     "EzdagoGasteizB",
     "/image/portfolio/ezdago_landscape2.png",
-    ["/image/portfolio/django.png", "/image/portfolio/python.png"],
-    "https://ezdagogasteizb.ikerocio.com"
+    null,
+    "https://ezdagogasteizb.ikerocio.com",
+    ["Django", "Sustainability", "Civic Tech", "Personal"],
+    "Un proyecto personal para 3 amigas para ver como hacer de Gasteiz una ciudad más verde"
   ),
   new Project(
     "Aitor viewbook",
-    "/image/portfolio/aitor_viewbook_landscape3.png",
-    ["/image/portfolio/django.png", "/image/portfolio/python.png"],
-    "https://aitorrayo.com"
+    "/image/portfolio/aitorrayo.png",
+    null,
+    "https://aitorrayo.com",
+    ["Django", "Photography", "Personal Website"],
+    "Un blog de fotos hecho en Django para un familiar"
+  ),
+
+  new Project(
+    "Breakout",
+    "/image/portfolio/mubreakout.png",
+    "https://github.com/0x10-z/mubreakout",
+    null,
+    ["Python", "PyGame"],
+    "Juego hecho con Python y PyGame que simula el antiguo Breakout"
   ),
 ];

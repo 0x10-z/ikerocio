@@ -6,6 +6,7 @@ import ExperienceContainer from "@/components/ExperienceContainer";
 import ProjectContainer from "@/components/ProjectContainer";
 import { skills, experiences, educations, certs, rrss, projects } from "@/data";
 import Footer from "@/components/Footer";
+import PortfolioGrid from "@/components/PortfolioGrid";
 
 export default function IndexPage() {
   const { t } = useIndexTranslation();
@@ -56,7 +57,7 @@ export default function IndexPage() {
         rrss={translatedRrss}
       />
       <Divider />
-      <ProjectContainer projects={translatedProjects} />
+      <PortfolioGrid projects={translatedProjects} />
       <Divider />
       <Footer />
     </div>
