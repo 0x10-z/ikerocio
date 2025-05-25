@@ -58,7 +58,7 @@ export const skills = [
 
 export const experiences = [
   new Experience(
-    "Kurago",
+    "Kurago Software",
     "experienceKuragoDescription",
     "experienceKurago",
     "https://kurago.software/"
@@ -90,6 +90,12 @@ export const experiences = [
 ];
 
 export const educations = [
+  new Education(
+    "educationMasterOffSec",
+    "educationMasterOffSecDescription",
+    "2024-2025",
+    "https://www.campusciberseguridad.com/master-en-seguridad-ofensiva"
+  ),
   new Education(
     "educationMaster",
     "educationMasterDescription",
@@ -158,7 +164,7 @@ export const projects = [
     "https://github.com/0x10-z/image-to-pdf-converter",
     "https://image-to-pdf-converter-two.vercel.app/",
     ["React", "PDF", "Tool", "Frontend"],
-    "Convierte una imagen en PDF directamente desde tu dispositivo sin subirlo a ningún sitio"
+    "projectImageToPdfConverter"
   ),
   new Project(
     "Whatsapp Chat Analyzer",
@@ -166,7 +172,7 @@ export const projects = [
     "https://github.com/0x10-z/Whatsapp-Chat-Analyzer",
     "https://whatsapp-chat-analyzer-two.vercel.app/",
     ["React", "Chat Analysis", "Visualization", "Tool"],
-    "Analiza las conversaciones de Whatsapp de una manera muy sencilla y descubre quien es tu amigo más pesado"
+    "projectWhatsappChatAnalyzer"
   ),
   new Project(
     "IPTV List Manager",
@@ -174,7 +180,7 @@ export const projects = [
     "https://github.com/0x10-z/iptv-list-manager",
     "https://iptv-list-manager.vercel.app/",
     ["React", "Media", "Tool", "Frontend"],
-    "Gestiona tus listas de canales de IPTV de una manera sencilla y quédate con el mejor contenido"
+    "projectIptvListManager"
   ),
   new Project(
     "One Cat a Day",
@@ -182,7 +188,7 @@ export const projects = [
     "https://github.com/0x10-z/One-Cat-a-Day",
     "https://one-cat-a-day.vercel.app/",
     ["React Native", "Mobile App", "Humor", "Daily Content"],
-    "Colecciona todas las imágenes de los gatos más divertidos de la red. Descubre uno nuevo cada día"
+    "projectOneCatADay"
   ),
   new Project(
     "Retrogasteiz",
@@ -190,7 +196,7 @@ export const projects = [
     "https://github.com/0x10-z/retrogasteiz",
     "https://retrogasteiz.com",
     ["Python", "AI", "Image Processing", "Photography", "Personal"],
-    "Descubre más de 130.000 fotos de Vitoria-Gasteiz como nunca antes la habías visto"
+    "projectRetrogasteiz"
   ),
   new Project(
     "DB Multiverse",
@@ -198,7 +204,7 @@ export const projects = [
     "https://github.com/0x10-z/python-dbuniverse-downloader",
     "https://github.com/0x10-z/python-dbuniverse-downloader/releases/tag/DragonBallMultiverse-PDF-latest",
     ["Python", "Scraping", "PDF"],
-    "Un proyecto personal que scrapea un sitio web creado por la comunidad fan de Dragon Ball y crea un PDF con todos los comics"
+    "projectDbMultiverse"
   ),
   new Project(
     "FastGPT",
@@ -206,7 +212,7 @@ export const projects = [
     "https://github.com/0x10-z/fast-gpt",
     null,
     ["FastAPI", "React", "OpenAI", "Chatbot", "Fullstack"],
-    "Un chat GPT hecho con Python y React"
+    "projectFastGpt"
   ),
   new Project(
     "EzdagoGasteizB",
@@ -214,7 +220,7 @@ export const projects = [
     null,
     "https://ezdagogasteizb.ikerocio.com",
     ["Django", "Sustainability", "Civic Tech", "Personal"],
-    "Un proyecto personal para 3 amigas para ver como hacer de Gasteiz una ciudad más verde"
+    "projectEzDagoGasteizB"
   ),
   new Project(
     "Aitor viewbook",
@@ -222,7 +228,7 @@ export const projects = [
     null,
     "https://aitorrayo.com",
     ["Django", "Photography", "Personal Website"],
-    "Un blog de fotos hecho en Django para un familiar"
+    "projectAitorViewbook"
   ),
 
   new Project(
@@ -231,6 +237,6 @@ export const projects = [
     "https://github.com/0x10-z/mubreakout",
     null,
     ["Python", "PyGame"],
-    "Juego hecho con Python y PyGame que simula el antiguo Breakout"
+    "projectBreakout"
   ),
 ];

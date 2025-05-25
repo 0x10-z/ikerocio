@@ -1,3 +1,4 @@
+import useIndexTranslation from "@/hooks/IndexTranslation";
 import { FC } from "react";
 
 interface PortfolioCardProps {
@@ -19,6 +20,8 @@ export const PortfolioCard: FC<PortfolioCardProps> = ({
   codeUrl,
   url,
 }) => {
+  const { t } = useIndexTranslation();
+
   return (
     <div className="bg-white rounded-lg  overflow-hidden max-w-sm">
       <div className="relative group overflow-hidden rounded-lg">
@@ -36,7 +39,7 @@ export const PortfolioCard: FC<PortfolioCardProps> = ({
         <h3 className="text-xl font-bold transition-colors duration-300 hover:text-yellow-400 hover:cursor-pointer">
           {title}
         </h3>
-        <p className="text-gray-600 text-sm mt-1">{description}</p>
+        <p className="text-gray-600 text-sm mt-1">{t(description)}</p>
         <div className="flex flex-wrap gap-2 mt-3">
           {tags.map((tag) => (
             <span
@@ -54,7 +57,7 @@ export const PortfolioCard: FC<PortfolioCardProps> = ({
               target="_blank"
               className="px-4 py-2 rounded-xl border border-gray-800 bg-white text-gray-900 text-sm font-semibold shadow hover:bg-gray-900 hover:text-white transition-all duration-300"
             >
-              🐙 Ver código
+              🐙 {t("seeRepo")}
             </a>
           )}
 
@@ -64,7 +67,7 @@ export const PortfolioCard: FC<PortfolioCardProps> = ({
               target="_blank"
               className="px-4 py-2 rounded-xl bg-yellow-400 text-gray-900 text-sm font-semibold shadow hover:bg-yellow-500 transition-all duration-300"
             >
-              🌐 Ver demo
+              🌐 {t("seeDemo")}
             </a>
           )}
         </div>
