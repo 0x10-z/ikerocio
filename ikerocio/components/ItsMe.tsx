@@ -73,7 +73,7 @@ export default function ItsMe() {
           </div>
 
           {/* Texto animado con altura fija */}
-          <div className="h-48 flex items-center justify-center md:justify-start mb-6">
+          <div className="h-32 flex items-center justify-center md:justify-start mb-6">
             <div className="text-xl text-customDark dark:text-white">
               <span ref={typedElement} className="border-r-2 pr-1"></span>
             </div>
