@@ -214,11 +214,26 @@ export const projects = [
     "projectGasteizkoRap"
   ),
   new Project(
+    "Juntas Generales de Álava",
+    "/image/portfolio/jjgg.png",
+    null,
+    "https://jjgg-web.vercel.app/",
+    ["React", "Personal", "Solo front", "Web scraping"],
+    "projectJjgg"
+  ),
+  new Project(
     "Retrogasteiz",
     "/image/portfolio/retrogasteiz_landscape2.png",
     "https://github.com/0x10-z/retrogasteiz",
     "https://retrogasteiz.com",
-    ["Python", "AI", "Image Processing", "Photography", "Personal"],
+    [
+      "Python",
+      "AI",
+      "Image Processing",
+      "Photography",
+      "Personal",
+      "Web scraping",
+    ],
     "projectRetrogasteiz"
   ),
   new Project(
@@ -226,7 +241,7 @@ export const projects = [
     "/image/portfolio/dbmultiverse.png",
     "https://github.com/0x10-z/python-dbuniverse-downloader",
     "https://github.com/0x10-z/python-dbuniverse-downloader/releases/tag/DragonBallMultiverse-PDF-latest",
-    ["Python", "Scraping", "PDF"],
+    ["Python", "Web scraping", "PDF"],
     "projectDbMultiverse"
   ),
   new Project(
