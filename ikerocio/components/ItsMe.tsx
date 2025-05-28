@@ -45,7 +45,7 @@ export default function ItsMe() {
           alt="Iker Ocio Avatar"
           width={255}
           height={255}
-          className="object-cover"
+          className="object-cover hover:cursor-pointer hover:scale-110 transition-transform duration-300"
         />
       </div>
 
