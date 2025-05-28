@@ -1,5 +1,7 @@
 import useIndexTranslation from "@/hooks/IndexTranslation";
+import { SiGithub } from "react-icons/si";
 import { FC } from "react";
+import { Globe } from "lucide-react";
 
 interface PortfolioCardProps {
   number: number;
@@ -50,14 +52,15 @@ export const PortfolioCard: FC<PortfolioCardProps> = ({
             </span>
           ))}
         </div>
-        <div className="flex justify-center gap-4 mt-6">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6">
           {codeUrl && (
             <a
               href={codeUrl}
               target="_blank"
-              className="px-4 py-2 rounded-xl border border-gray-800 bg-white text-gray-900 text-sm font-semibold shadow hover:bg-gray-900 hover:text-white transition-all duration-300"
+              className="flex items-center justify-center gap-2 px-4 py-2 rounded-xl border border-gray-800 bg-white text-gray-900 text-sm font-semibold shadow hover:bg-gray-900 hover:text-white transition-all duration-300 w-full sm:w-auto text-center"
             >
-              🐙 {t("seeRepo")}
+              <SiGithub className="w-5 h-5" />
+              {t("seeRepo")}
             </a>
           )}
 
@@ -65,9 +68,10 @@ export const PortfolioCard: FC<PortfolioCardProps> = ({
             <a
               href={url}
               target="_blank"
-              className="px-4 py-2 rounded-xl bg-yellow-400 text-gray-900 text-sm font-semibold shadow hover:bg-yellow-500 transition-all duration-300"
+              className="flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-yellow-400 text-gray-900 text-sm font-semibold shadow hover:bg-yellow-500 transition-all duration-300 w-full sm:w-auto text-center"
             >
-              🌐 {t("seeDemo")}
+              <Globe className="w-5 h-5" />
+              {t("seeDemo")}
             </a>
           )}
         </div>

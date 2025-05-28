@@ -13,7 +13,8 @@ export default function CertificationField({
         className="font-bold"
         href={url}
         target="_blank"
-        rel="noopener noreferrer">
+        rel="noopener noreferrer"
+      >
         {title}
       </a>
     </li>

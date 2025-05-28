@@ -57,35 +57,47 @@ export const skills = [
 ];
 
 export const experiences = [
+  // new Experience(
+  //   "Bystronic Software",
+  //   "experienceBystronicDescription",
+  //   "experienceBystronic",
+  //   "https://bystronic.software/",
+  //   "/image/companies/bystronic.png"
+  // ),
   new Experience(
     "Kurago Software",
     "experienceKuragoDescription",
     "experienceKurago",
-    "https://kurago.software/"
+    "https://kurago.software/",
+    "/image/companies/kurago_software.jpg"
   ),
   new Experience(
     "SMC International Training ",
     "experienceSmcDescription",
     "experienceSmc",
-    "https://www.smctraining.com/es/webpage/indexpage/1181"
+    "https://www.smctraining.com/es/webpage/indexpage/1181",
+    "/image/companies/smc.png"
   ),
   new Experience(
     "Becario Mondragon Unibertsitatea",
     "experienceMuDescription",
     "experienceMu",
-    "#"
+    "#",
+    "/image/companies/mu.png"
   ),
   new Experience(
     "Freelance",
     "experienceFreelanceDescription",
     "experienceFreelance",
-    "https://ikerocio.com/"
+    "https://ikerocio.com/",
+    "/image/io-icon.png"
   ),
   new Experience(
     "Njoy Party & Events",
     "experienceNjoyDescription",
     "experienceNjoy",
-    "#"
+    "#",
+    "/image/companies/njoy.jpg"
   ),
 ];
 
@@ -94,19 +106,22 @@ export const educations = [
     "educationMasterOffSec",
     "educationMasterOffSecDescription",
     "2024-2025",
-    "https://www.campusciberseguridad.com/master-en-seguridad-ofensiva"
+    "https://www.campusciberseguridad.com/master-en-seguridad-ofensiva",
+    "/image/companies/ucam.png"
   ),
   new Education(
     "educationMaster",
     "educationMasterDescription",
     "2019-2020",
-    "https://www.mondragon.edu/es/master-universitario-analisis-datos-ciberseguridad-computacion-nube"
+    "https://www.mondragon.edu/es/master-universitario-analisis-datos-ciberseguridad-computacion-nube",
+    "/image/companies/mu.png"
   ),
   new Education(
     "educationDegree",
     "educationDegreeDescription",
     "2010-2018",
-    "https://www.mondragon.edu/es/grado-ingenieria-informatica"
+    "https://www.mondragon.edu/es/grado-ingenieria-informatica",
+    "/image/companies/mu.png"
   ),
 ];
 
@@ -189,6 +204,14 @@ export const projects = [
     "https://one-cat-a-day.vercel.app/",
     ["React Native", "Mobile App", "Humor", "Daily Content"],
     "projectOneCatADay"
+  ),
+  new Project(
+    "Music Player",
+    "/image/portfolio/gasteizko-rap.png",
+    "https://github.com/0x10-z/gasteizko-rap-player/",
+    "https://gasteizko-rap-player.vercel.app/",
+    ["React", "Music"],
+    "projectGasteizkoRap"
   ),
   new Project(
     "Retrogasteiz",

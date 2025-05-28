@@ -13,6 +13,7 @@ import { Education } from "@/models/Education";
 import { Certification } from "@/models/Certification";
 import CertificationField from "./CertificationField";
 import { Network } from "@/models/Network";
+import { BadgeCheck, GraduationCap, Share2, User } from "lucide-react";
 
 interface ExperienceContainerProps {
   experiences: Experience[];
@@ -33,7 +34,7 @@ export default function ExperienceContainer({
     <section className="dark:bg-gray-900 w-screen bg-white">
       <div className="mx-auto max-w-screen-xl py-2">
         <Container title={t("experience")}>
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+          <div className="grid  grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
             <ul className="list-disc">
               {experiences &&
                 experiences.map((experience, index) => (
@@ -43,12 +44,13 @@ export default function ExperienceContainer({
                     description={experience.description}
                     dateString={experience.dateString}
                     dateUrl={experience.dateUrl}
+                    imageUrl={experience.imageUrl}
                   />
                 ))}
             </ul>
             <div>
               <div className="flex items-center justify-start font-bold">
-                <FontAwesomeIcon icon={faCertificate} className="w-8 mr-2" />
+                <BadgeCheck className="w-8 h-8 mr-2" />
                 <h3>{t("cert")}</h3>
               </div>
               <ul className="list-disc">
@@ -64,10 +66,10 @@ export default function ExperienceContainer({
             </div>
           </div>
           <hr />
-          <div className="grid m-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+          <div className="grid m-2 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
             <div>
               <div className="flex items-center justify-start font-bold">
-                <FontAwesomeIcon icon={faGraduationCap} className="w-8 mr-2" />
+                <GraduationCap className="w-8 h-8 mr-2" />
                 <h3>{t("education")}</h3>
               </div>
               <ul className="list-disc">
@@ -79,13 +81,14 @@ export default function ExperienceContainer({
                       description={ed.description}
                       dateString={ed.dateString}
                       dateUrl={ed.dateUrl}
+                      imageUrl={ed.imageUrl}
                     />
                   ))}
               </ul>
             </div>
             <div>
               <div className="flex items-center justify-start font-bold">
-                <FontAwesomeIcon icon={faUser} className="w-8 mr-2" />
+                <User className="w-8 h-8 mr-2" />
                 <h3>{t("aboutMe")}</h3>
               </div>
               <p>{t("aboutMeDescription")}</p>
@@ -95,7 +98,7 @@ export default function ExperienceContainer({
           <div className="grid m-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
             <div>
               <div className="flex items-center justify-start font-bold">
-                <FontAwesomeIcon icon={faShareAltSquare} className="w-8 mr-2" />
+                <Share2 className="w-8 h-8 mr-2" />
                 <h3>{t("socialNetworks")}</h3>
               </div>
               <ul className="list-disc list-inside m-4">
