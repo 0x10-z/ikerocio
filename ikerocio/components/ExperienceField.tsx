@@ -18,7 +18,7 @@ export default function ExperienceField({
       <img
         src={imageUrl}
         alt={`${title} logo`}
-        className="w-12 h-12 rounded-md object-contain"
+        className="w-12 h-12 rounded-md object-contain hover:cursor-pointer hover:scale-110 transition-transform duration-300"
       />
       <div>
         <div className="flex flex-col sm:flex-row sm:items-center gap-2">
