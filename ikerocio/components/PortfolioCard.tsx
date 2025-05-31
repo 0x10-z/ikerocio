@@ -30,7 +30,7 @@ export const PortfolioCard: FC<PortfolioCardProps> = ({
         <img
           src={image}
           alt={title}
-          className="h-44 w-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:cursor-pointer"
+          className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:cursor-pointer"
         />
         <span className="absolute top-2 left-2 bg-black/60 text-white text-sm font-bold px-2 py-1 rounded transform -rotate-12 group-hover:scale-150 transition-transform duration-300">
           #{number}

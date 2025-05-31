@@ -174,6 +174,14 @@ export const rrss = [
 
 export const projects = [
   new Project(
+    "Dwitter",
+    "/image/portfolio/dwitter.png",
+    "https://github.com/0x10-z/dwitter",
+    null,
+    ["Django", "SSR", "Dwitter", "Rapid prototyping"],
+    "projectDwitter"
+  ),
+  new Project(
     "Image 2 PDF converter",
     "/image/portfolio/image-to-pdf.png",
     "https://github.com/0x10-z/image-to-pdf-converter",
