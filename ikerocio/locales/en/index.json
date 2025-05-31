@@ -63,7 +63,7 @@
   "aboutMe": "About me",
   "aboutMeDescription": "I'm a highly technical and constantly learning individual with a competitive spirit. Outside of work, I enjoy music, exploring new sports like snowboarding and scuba diving, and traveling whenever I can. Programming is not just my profession—it's my hobby. I’m passionate about doing things right and paying attention to detail. If I had to describe myself in one word, it would be responsibility.",
   "socialNetworks": "Social networks",
-  "projectDwitter": "A Twitter-like social network built with Django. Post, like, edit your profile, and explore a sleek and lightweight clone",
+  "projectDwitter": "Una red social tipo Twitter hecha con Django. Publica, da like, edita tu perfil y experimenta con un clon ligero y elegante que ahora incluye un sistema de caché inteligente para acelerar el dashboard.",
   "projectImageToPdfConverter": "Convert an image to PDF directly from your device without uploading it anywhere.",
   "projectWhatsappChatAnalyzer": "Easily analyze WhatsApp conversations and find out who your most talkative friend is.",
   "projectIptvListManager": "Easily manage your IPTV channel lists and keep the best content.",
