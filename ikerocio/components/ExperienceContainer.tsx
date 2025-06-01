@@ -3,17 +3,12 @@ import Container from "./Container";
 import { Experience } from "@/models/Experience";
 import useIndexTranslation from "@/hooks/IndexTranslation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCertificate,
-  faGraduationCap,
-  faShareAltSquare,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
 import { Education } from "@/models/Education";
 import { Certification } from "@/models/Certification";
 import CertificationField from "./CertificationField";
 import { Network } from "@/models/Network";
 import { BadgeCheck, GraduationCap, Share2, User } from "lucide-react";
+import EducationField from "@/components/EducationField";
 
 interface ExperienceContainerProps {
   experiences: Experience[];
@@ -75,12 +70,15 @@ export default function ExperienceContainer({
               <ul className="list-disc">
                 {education &&
                   education.map((ed, index) => (
-                    <ExperienceField
+                    <EducationField
                       key={index}
                       title={ed.university}
                       description={ed.description}
                       dateString={ed.dateString}
                       dateUrl={ed.dateUrl}
+                      thesisTitle={ed.thesisTitle}
+                      thesisDescription={ed.thesisDescription}
+                      thesisType={ed.thesisType}
                       imageUrl={ed.imageUrl}
                     />
                   ))}

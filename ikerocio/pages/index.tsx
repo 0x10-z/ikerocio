@@ -22,12 +22,6 @@ export default function IndexPage() {
     description: t(experience.description),
   }));
 
-  const translatedEducations = educations.map((education) => ({
-    ...education,
-    university: t(education.university),
-    description: t(education.description),
-  }));
-
   const translatedCerts = certs.map((cert) => ({
     ...cert,
     title: t(cert.title),
@@ -51,7 +45,7 @@ export default function IndexPage() {
       <Divider />
       <ExperienceContainer
         experiences={translatedExperiences}
-        education={translatedEducations}
+        education={educations}
         certifications={translatedCerts}
         rrss={translatedRrss}
       />

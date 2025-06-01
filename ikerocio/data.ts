@@ -107,6 +107,9 @@ export const educations = [
     "educationMasterOffSecDescription",
     "2024-2025",
     "https://www.campusciberseguridad.com/master-en-seguridad-ofensiva",
+    "educationMasterOffSecTfmTitle",
+    "educationMasterOffSecTfmDescription",
+    "TFM",
     "/image/companies/ucam.png"
   ),
   new Education(
@@ -114,6 +117,9 @@ export const educations = [
     "educationMasterDescription",
     "2019-2020",
     "https://www.mondragon.edu/es/master-universitario-analisis-datos-ciberseguridad-computacion-nube",
+    "educationACibDevopsTfmTitle",
+    "educationACibDevopsTfmDescription",
+    "TFM",
     "/image/companies/mu.png"
   ),
   new Education(
@@ -121,6 +127,9 @@ export const educations = [
     "educationDegreeDescription",
     "2010-2018",
     "https://www.mondragon.edu/es/grado-ingenieria-informatica",
+    "educationComputerScienteTfgTitle",
+    "educationComputerScienteTfgDescription",
+    "TFG",
     "/image/companies/mu.png"
   ),
 ];
