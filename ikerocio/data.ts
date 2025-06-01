@@ -1,12 +1,16 @@
 import { Skill } from "./models/Skill";
 import {
   faBlog,
+  faChartBar,
   faCodeBranch,
   faDatabase,
   faEnvelope,
+  faHandsHelping,
+  faProjectDiagram,
   faServer,
   faShieldAlt,
   faUser,
+  faVial,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faDocker,
@@ -28,9 +32,24 @@ import { Project } from "@/models/Project";
 
 export const skills = [
   new Skill(
+    "skillSoftSkill",
+    "skillSoftSkillDescription",
+    faHandsHelping,
+    "#6366F1"
+  ),
+  new Skill("skillTesting", "skillTestingDescription", faVial, "#16A34A"),
+  new Skill("skillGit", "skillGitDescription", faCodeBranch, "#F43F5E"),
+  new Skill(
+    "skillArchitecture",
+    "skillArchitectureDescription",
+    faProjectDiagram,
+    "#CA8A04"
+  ),
+
+  new Skill(
     "skillDataAnalysis",
     "skillDataAnalysisDescription",
-    faCodeBranch,
+    faChartBar,
     "#d910f1"
   ),
   new Skill(
