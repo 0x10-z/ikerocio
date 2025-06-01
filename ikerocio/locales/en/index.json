@@ -1,9 +1,9 @@
 {
   "helloWorld": "Hey, World!",
-  "seeRepo": "See repo",
-  "seeDemo": "See demo",
-  "seeTfg": "See TFG",
-  "seeTfm": "See TFM",
+  "seeRepo": "View repo",
+  "seeDemo": "View demo",
+  "seeTfg": "View Bachelor's Thesis",
+  "seeTfm": "View Master's Thesis",
   "personalDescription1": "Passionate about software development, especially Python. I'm also fascinated by physics and astronomy.",
   "personalDescription2": "In technology, few things are absolute. The best solution always depends on the context.",
   "personalDescription3": "Advanced programming is a race between software engineers trying to build better idiot-proof systems, and the Universe trying to produce better idiots. So far, the Universe is winning.",
