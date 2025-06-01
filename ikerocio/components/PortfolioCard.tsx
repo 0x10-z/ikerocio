@@ -26,7 +26,7 @@ export const PortfolioCard: FC<PortfolioCardProps> = ({
 
   return (
     <div className="bg-white rounded-lg  overflow-hidden max-w-sm">
-      <div className="relative group overflow-hidden rounded-lg">
+      <div className="relative group overflow-hidden rounded-xl border-4 border-yellow-400 dark:border-yellow-500 shadow-md hover:shadow-xl hover:border-yellow-500 transition-all duration-300">
         <img
           src={image}
           alt={title}
