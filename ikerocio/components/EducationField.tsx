@@ -61,7 +61,7 @@ export default function EducationField({
           {thesisTitle && thesisDescription && (
             <button
               onClick={() => setShowModal(true)}
-              className="flex items-center mt-1 justify-center gap-2 px-2 py-0 rounded-xl bg-blue-500 text-gray-100 text-sm font-semibold shadow hover:bg-blue-600 transition-all duration-300 w-full sm:w-auto text-center"
+              className="flex items-center mt-1 justify-center gap-2 px-3 py-1 rounded-xl bg-blue-500 text-gray-100 text-sm font-semibold shadow hover:bg-blue-600 transition-all duration-300"
             >
               {thesisType === "TFG" ? t("seeTfg") : t("seeTfm")}
             </button>
