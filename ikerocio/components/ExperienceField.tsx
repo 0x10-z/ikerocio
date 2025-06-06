@@ -4,6 +4,7 @@ interface ExperienceFieldProps {
   dateString: string;
   dateUrl: string;
   imageUrl: string;
+  badges?: string[];
 }
 
 export default function ExperienceField({
@@ -12,6 +13,7 @@ export default function ExperienceField({
   dateString,
   dateUrl,
   imageUrl,
+  badges = [],
 }: ExperienceFieldProps) {
   return (
     <li className="flex flex-col sm:flex-row items-start sm:items-start gap-4 m-2 pb-4 border-b border-gray-200 dark:border-gray-700 sm:border-b-0">
@@ -35,6 +37,18 @@ export default function ExperienceField({
         <p className="text-sm text-gray-700 dark:text-gray-300">
           {description}
         </p>
+        {badges.length > 0 && (
+          <div className="flex flex-wrap gap-2">
+            {badges.map((badge, index) => (
+              <span
+                key={index}
+                className="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-md"
+              >
+                {badge}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </li>
   );

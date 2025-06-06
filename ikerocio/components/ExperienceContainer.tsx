@@ -40,6 +40,7 @@ export default function ExperienceContainer({
                     dateString={experience.dateString}
                     dateUrl={experience.dateUrl}
                     imageUrl={experience.imageUrl}
+                    badges={experience.badges}
                   />
                 ))}
             </ul>

@@ -88,35 +88,61 @@ export const experiences = [
     "experienceKuragoDescription",
     "experienceKurago",
     "https://kurago.software/",
-    "/image/companies/kurago_software.jpg"
+    "/image/companies/kurago_software.jpg",
+    [
+      ".NET",
+      "WPF",
+      "React",
+      "Testing",
+      "Websockets",
+      "OpcUA",
+      "Software Engineering",
+      "Industry 4.0",
+      "InnoSetup",
+      "Agile",
+      "Devops",
+      "MkDocs",
+    ]
   ),
   new Experience(
     "SMC International Training ",
     "experienceSmcDescription",
     "experienceSmc",
     "https://www.smctraining.com/es/webpage/indexpage/1181",
-    "/image/companies/smc.png"
+    "/image/companies/smc.png",
+    [
+      ".NET",
+      "Testing",
+      "SignalR",
+      "OpcUA",
+      "Industry 4.0",
+      "Django",
+      "RabbitMQ",
+    ]
   ),
   new Experience(
     "Becario Mondragon Unibertsitatea",
     "experienceMuDescription",
     "experienceMu",
     "#",
-    "/image/companies/mu.png"
+    "/image/companies/mu.png",
+    ["Java", "Python", "Matlab"]
   ),
   new Experience(
     "Freelance",
     "experienceFreelanceDescription",
     "experienceFreelance",
     "https://ikerocio.com/",
-    "/image/io-icon.png"
+    "/image/io-icon.png",
+    ["PHP", "Java", "Python", "Django", "React", "Web Scrapping", "Android"]
   ),
   new Experience(
     "Njoy Party & Events",
     "experienceNjoyDescription",
     "experienceNjoy",
     "#",
-    "/image/companies/njoy.jpg"
+    "/image/companies/njoy.jpg",
+    ["Django", "Scripting", "MVP"]
   ),
 ];
 
