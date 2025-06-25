@@ -120,7 +120,7 @@ export const experiences = [
     ]
   ),
   new Experience(
-    "SMC International Training ",
+    "SMC International Training",
     "experienceSmcDescription",
     "experienceSmc",
     "https://www.smctraining.com/es/webpage/indexpage/1181",
