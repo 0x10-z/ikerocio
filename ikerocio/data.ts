@@ -76,13 +76,28 @@ export const skills = [
 ];
 
 export const experiences = [
-  // new Experience(
-  //   "Bystronic Software",
-  //   "experienceBystronicDescription",
-  //   "experienceBystronic",
-  //   "https://bystronic.software/",
-  //   "/image/companies/bystronic.png"
-  // ),
+  new Experience(
+    "Bystronic Software",
+    "experienceBystronicDescription",
+    "experienceBystronic",
+    "https://bystronic.software/",
+    "/image/companies/bystronic.png",
+    [
+      ".NET",
+      "WPF",
+      "WebApi",
+      "React",
+      "Testing",
+      "Websockets",
+      "OpcUA",
+      "Software Engineering",
+      "Industry 4.0",
+      "InnoSetup",
+      "Agile",
+      "Devops",
+      "MkDocs",
+    ]
+  ),
   new Experience(
     "Kurago Software",
     "experienceKuragoDescription",
