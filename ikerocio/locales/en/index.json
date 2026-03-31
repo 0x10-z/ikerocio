@@ -91,5 +91,7 @@
   "projectFastGpt": "A GPT-based chat built with Python and React.",
   "projectEzDagoGasteizB": "A personal project for three friends to explore how to make Gasteiz a greener city.",
   "projectAitorViewbook": "A photo blog built with Django for a family member.",
-  "projectBreakout": "A game made with Python and PyGame that simulates the classic Breakout."
+  "projectBreakout": "A game made with Python and PyGame that simulates the classic Breakout.",
+  "projectMkdocsMaterialPreview": "A Visual Studio Code extension to preview MkDocs Material documentation live, supporting instant reload and theme switching.",
+  "projectRenfeEnHora": "Real-time arrivals dashboard for Renfe trains: track delays by station, explore historical trends and statistics using Renfe Open Data."
 }

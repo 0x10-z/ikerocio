@@ -35,7 +35,7 @@ export const skills = [
     "skillSoftSkill",
     "skillSoftSkillDescription",
     faHandsHelping,
-    "#6366F1"
+    "#6366F1",
   ),
   new Skill("skillTesting", "skillTestingDescription", faVial, "#16A34A"),
   new Skill("skillGit", "skillGitDescription", faCodeBranch, "#F43F5E"),
@@ -43,20 +43,20 @@ export const skills = [
     "skillArchitecture",
     "skillArchitectureDescription",
     faProjectDiagram,
-    "#CA8A04"
+    "#CA8A04",
   ),
 
   new Skill(
     "skillDataAnalysis",
     "skillDataAnalysisDescription",
     faChartBar,
-    "#d910f1"
+    "#d910f1",
   ),
   new Skill(
     "skillCybersec",
     "skillCybersecDescription",
     faShieldAlt,
-    "rgb(221, 149, 81)"
+    "rgb(221, 149, 81)",
   ),
   new Skill("skillDevops", "skillDevopsDescription", faDocker, "#0db7ed"),
   new Skill("skillCloud", "skillCloudDescription", faAws, "ff9900"),
@@ -66,7 +66,7 @@ export const skills = [
     "skillJavascript",
     "skillJavascriptDescription",
     faJsSquare,
-    "f7df1e"
+    "f7df1e",
   ),
   new Skill("skillCss", "skillCssDescription", faCss3Alt, "264de4", true),
   new Skill("skillJava", "skillJavaDescription", faJava, "db1f29"),
@@ -96,7 +96,7 @@ export const experiences = [
       "Agile",
       "Devops",
       "MkDocs",
-    ]
+    ],
   ),
   new Experience(
     "Kurago Software",
@@ -117,7 +117,7 @@ export const experiences = [
       "Agile",
       "Devops",
       "MkDocs",
-    ]
+    ],
   ),
   new Experience(
     "SMC International Training",
@@ -133,7 +133,7 @@ export const experiences = [
       "Industry 4.0",
       "Django",
       "RabbitMQ",
-    ]
+    ],
   ),
   new Experience(
     "Becario Mondragon Unibertsitatea",
@@ -141,7 +141,7 @@ export const experiences = [
     "experienceMu",
     "#",
     "/image/companies/mu.png",
-    ["Java", "Python", "Matlab"]
+    ["Java", "Python", "Matlab"],
   ),
   new Experience(
     "Freelance",
@@ -149,7 +149,7 @@ export const experiences = [
     "experienceFreelance",
     "https://ikerocio.com/",
     "/image/io-icon.png",
-    ["PHP", "Java", "Python", "Django", "React", "Web Scrapping", "Android"]
+    ["PHP", "Java", "Python", "Django", "React", "Web Scrapping", "Android"],
   ),
   new Experience(
     "Njoy Party & Events",
@@ -157,7 +157,7 @@ export const experiences = [
     "experienceNjoy",
     "#",
     "/image/companies/njoy.jpg",
-    ["Django", "Scripting", "MVP"]
+    ["Django", "Scripting", "MVP"],
   ),
 ];
 
@@ -170,7 +170,7 @@ export const educations = [
     "educationMasterOffSecTfmTitle",
     "educationMasterOffSecTfmDescription",
     "TFM",
-    "/image/companies/ucam.png"
+    "/image/companies/ucam.png",
   ),
   new Education(
     "educationMaster",
@@ -180,7 +180,7 @@ export const educations = [
     "educationACibDevopsTfmTitle",
     "educationACibDevopsTfmDescription",
     "TFM",
-    "/image/companies/mu.png"
+    "/image/companies/mu.png",
   ),
   new Education(
     "educationDegree",
@@ -190,42 +190,42 @@ export const educations = [
     "educationComputerScienteTfgTitle",
     "educationComputerScienteTfgDescription",
     "TFG",
-    "/image/companies/mu.png"
+    "/image/companies/mu.png",
   ),
 ];
 
 export const certs = [
   new Certification(
     "certEjpt",
-    "https://verified.elearnsecurity.com/certificates/cdbd4f81-182a-42f7-a48c-8c5199fe4b1d"
+    "https://verified.elearnsecurity.com/certificates/cdbd4f81-182a-42f7-a48c-8c5199fe4b1d",
   ),
   new Certification(
     "certAz900",
-    "https://www.credly.com/badges/4b7b87fe-3638-488d-8668-263beeca79f2?source=linked_in_profile"
+    "https://www.credly.com/badges/4b7b87fe-3638-488d-8668-263beeca79f2?source=linked_in_profile",
   ),
   new Certification(
     "certAz400",
-    "https://www.credly.com/badges/65f67530-9b8f-4953-baeb-2e96b4e90434/linked_in_profile"
+    "https://www.credly.com/badges/65f67530-9b8f-4953-baeb-2e96b4e90434/linked_in_profile",
   ),
   new Certification(
     "certCcna2",
-    "http://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html"
+    "http://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html",
   ),
   new Certification(
     "certCcna3",
-    "http://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html"
+    "http://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html",
   ),
   new Certification(
     "certCcna4",
-    "http://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html"
+    "http://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html",
   ),
   new Certification(
     "certCcnaIoe",
-    "https://learningnetwork.cisco.com/community/certifications/iot"
+    "https://learningnetwork.cisco.com/community/certifications/iot",
   ),
   new Certification(
     "certDjango",
-    "http://www.spri.eus/euskadinnova/es/enpresa-digitala/agenda/desarrollo-agil-con-python-django/3889.aspx"
+    "http://www.spri.eus/euskadinnova/es/enpresa-digitala/agenda/desarrollo-agil-con-python-django/3889.aspx",
   ),
 ];
 
@@ -235,7 +235,7 @@ export const rrss = [
   new Network(
     "LinkedIn",
     "https://www.linkedin.com/hp/?dnr=TGyOzgcX4qa3QuJirGRNGgjo4qaIQIhgxmnw",
-    faLinkedin
+    faLinkedin,
   ),
   new Network("FlickR", "https://www.flickr.com/photos/ikerocio/", faFlickr),
   new Network("iker@ikerocio.com", "mailto://iker@ikerocio.com", faEnvelope),
@@ -243,12 +243,28 @@ export const rrss = [
 
 export const projects = [
   new Project(
+    "MkDocs Material Preview VSCode Plugin",
+    "/image/portfolio/vscode-material-plugin.png",
+    "https://github.com/0x10-z/vscode-mkdocs-material-preview",
+    "https://marketplace.visualstudio.com/items?itemName=0x10.mkdocs-material-preview",
+    ["VSCode Extension", "MkDocs", "Material", "Plugin", "Documentation"],
+    "projectMkdocsMaterialPreview",
+  ),
+  new Project(
+    "Renfe EnHora",
+    "/image/portfolio/renfe-enhora.png",
+    "https://github.com/0x10-z/renfe-enhora",
+    "https://renfe-enhora.vercel.app/",
+    ["React", "Next.js", "Vercel", "Web scraping"],
+    "projectRenfeEnHora",
+  ),
+  new Project(
     "Dwitter",
     "/image/portfolio/dwitter.png",
     "https://github.com/0x10-z/dwitter",
     null,
     ["Django", "SSR", "Dwitter", "Rapid prototyping"],
-    "projectDwitter"
+    "projectDwitter",
   ),
   new Project(
     "Image 2 PDF converter",
@@ -256,7 +272,7 @@ export const projects = [
     "https://github.com/0x10-z/image-to-pdf-converter",
     "https://image-to-pdf-converter-two.vercel.app/",
     ["React", "PDF", "Tool", "Frontend"],
-    "projectImageToPdfConverter"
+    "projectImageToPdfConverter",
   ),
   new Project(
     "Whatsapp Chat Analyzer",
@@ -264,7 +280,7 @@ export const projects = [
     "https://github.com/0x10-z/Whatsapp-Chat-Analyzer",
     "https://whatsapp-chat-analyzer-two.vercel.app/",
     ["React", "Chat Analysis", "Visualization", "Tool"],
-    "projectWhatsappChatAnalyzer"
+    "projectWhatsappChatAnalyzer",
   ),
   new Project(
     "IPTV List Manager",
@@ -272,7 +288,7 @@ export const projects = [
     "https://github.com/0x10-z/iptv-list-manager",
     "https://iptv-list-manager.vercel.app/",
     ["React", "Media", "Tool", "Frontend"],
-    "projectIptvListManager"
+    "projectIptvListManager",
   ),
   new Project(
     "One Cat a Day",
@@ -280,7 +296,7 @@ export const projects = [
     "https://github.com/0x10-z/One-Cat-a-Day",
     "https://one-cat-a-day.vercel.app/",
     ["React Native", "Mobile App", "Humor", "Daily Content"],
-    "projectOneCatADay"
+    "projectOneCatADay",
   ),
   new Project(
     "Music Player",
@@ -288,7 +304,7 @@ export const projects = [
     "https://github.com/0x10-z/gasteizko-rap-player/",
     "https://gasteizko-rap-player.vercel.app/",
     ["React", "Music"],
-    "projectGasteizkoRap"
+    "projectGasteizkoRap",
   ),
   new Project(
     "Juntas Generales de Álava",
@@ -296,7 +312,7 @@ export const projects = [
     null,
     "https://jjgg-web.vercel.app/",
     ["React", "Personal", "Solo front", "Web scraping"],
-    "projectJjgg"
+    "projectJjgg",
   ),
   new Project(
     "Retrogasteiz",
@@ -311,7 +327,7 @@ export const projects = [
       "Personal",
       "Web scraping",
     ],
-    "projectRetrogasteiz"
+    "projectRetrogasteiz",
   ),
   new Project(
     "DB Multiverse",
@@ -319,7 +335,7 @@ export const projects = [
     "https://github.com/0x10-z/python-dbuniverse-downloader",
     "https://github.com/0x10-z/python-dbuniverse-downloader/releases/tag/DragonBallMultiverse-PDF-latest",
     ["Python", "Web scraping", "PDF"],
-    "projectDbMultiverse"
+    "projectDbMultiverse",
   ),
   new Project(
     "FastGPT",
@@ -327,7 +343,7 @@ export const projects = [
     "https://github.com/0x10-z/fast-gpt",
     null,
     ["FastAPI", "React", "OpenAI", "Chatbot", "Fullstack"],
-    "projectFastGpt"
+    "projectFastGpt",
   ),
   new Project(
     "EzdagoGasteizB",
@@ -335,7 +351,7 @@ export const projects = [
     null,
     "https://ezdagogasteizb.ikerocio.com",
     ["Django", "Sustainability", "Civic Tech", "Personal"],
-    "projectEzDagoGasteizB"
+    "projectEzDagoGasteizB",
   ),
   new Project(
     "Aitor viewbook",
@@ -343,7 +359,7 @@ export const projects = [
     null,
     "https://aitorrayo.com",
     ["Django", "Photography", "Personal Website"],
-    "projectAitorViewbook"
+    "projectAitorViewbook",
   ),
 
   new Project(
@@ -352,6 +368,6 @@ export const projects = [
     "https://github.com/0x10-z/mubreakout",
     null,
     ["Python", "PyGame"],
-    "projectBreakout"
+    "projectBreakout",
   ),
 ];
